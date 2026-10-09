@@ -1,0 +1,20 @@
+/* Pretendard 글꼴을 이 폴더에서 불러온다(CDN이 막혀도 같은 글꼴로 보이게, 인쇄 PDF도 같은 글꼴로 임베드되게).
+   파일: 저작자가 배포한 부분 글꼴(한글 2,780자 + 영문·문장부호) 그대로다. 고치지 않는다.
+   출처: github.com/orioncactus/pretendard v1.3.9 · 라이선스: SIL OFL 1.1, Reserved Font Name Pretendard(fonts/OFL.txt)
+   굵기: 400·500·600·700. 500(Medium)은 shadcn/ui 부품(설코딩 UI)이 버튼·이름표·창 제목에 쓴다(D-046: 라이브러리 규칙 우선). */
+@font-face {
+  font-family: "Pretendard"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/Pretendard-Regular.subset.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/Pretendard-Medium.subset.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/Pretendard-SemiBold.subset.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/Pretendard-Bold.subset.woff2") format("woff2");
+}

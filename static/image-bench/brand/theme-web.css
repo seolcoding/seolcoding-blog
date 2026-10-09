@@ -1,0 +1,21 @@
+/* 설코딩 테마 v2 · 웹 — 밝은 판이 기본이고, 기기 설정이 어두우면(또는 <html data-theme="dark">) 어두운 판으로 바뀐다.
+   <html data-theme="light">이면 기기 설정과 관계없이 밝은 판이다. 화면 모드 버튼은 이 속성만 바꾸면 된다.
+   어두운 판 값은 theme-dark.css와 같다. CSS는 한 묶음을 두 조건에 나눠 쓸 수 없어서 여기 두 번 적는다(값을 바꿀 때 셋 다 고친다). */
+@import url("theme.css");
+:root { color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --c-bg: var(--color-canvas-dark); --c-surface: var(--color-surface-dark); --c-ink: var(--color-ink-dark);
+    --c-body: var(--color-body-dark); --c-muted: var(--color-muted-dark); --c-line: var(--color-hairline-dark);
+    --c-accent-text: var(--color-ink-dark); --c-rule: var(--color-rule-dark); --c-logo-light: none; --c-logo-dark: block;
+    --mark-h: max(2px, 0.09em); --mark-y: 1.05em;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --c-bg: var(--color-canvas-dark); --c-surface: var(--color-surface-dark); --c-ink: var(--color-ink-dark);
+  --c-body: var(--color-body-dark); --c-muted: var(--color-muted-dark); --c-line: var(--color-hairline-dark);
+  --c-accent-text: var(--color-ink-dark); --c-rule: var(--color-rule-dark); --c-logo-light: none; --c-logo-dark: block;
+  --mark-h: max(2px, 0.09em); --mark-y: 1.05em;
+}

@@ -1,0 +1,25 @@
+/* 설코딩 테마 v2 · 기본 강도 — 템플릿 변수(--c-*)를 DESIGN.md 토큰(tokens.css)에 잇는다.
+   색·모서리 값은 여기서 바꾸지 않는다. references/DESIGN.md를 고치고 tokens.css를 다시 만든다.
+   서체와 굵기는 DESIGN.md Typography(Pretendard, 제목 700·본문 400)와 맞춘다. 글꼴 파일은 fonts.css(이 폴더)에서 온다. */
+@import url("tokens.css");
+@import url("fonts.css");
+:root {
+  --draft-name: "설코딩 v2 · 기본";
+  --c-bg: var(--color-canvas); --c-surface: var(--color-surface); --c-ink: var(--color-ink);
+  --c-body: var(--color-body); --c-muted: var(--color-muted); --c-line: var(--color-hairline);
+  --c-accent: var(--color-primary); --c-on-accent: var(--color-on-primary);
+  --c-accent-text: var(--color-ink); --c-mark: var(--color-primary); --c-accent-2: var(--color-primary);
+  /* 서비스 형광펜: 교육 노랑, 개발 파랑, 컨설팅 빨강(D-033) */
+  --c-tone-education: var(--color-lemon); --c-tone-development: var(--color-sky); --c-tone-consulting: var(--color-coral);
+  /* 줄 노트 선(DESIGN.md Ruled Note): 밝은 판은 검정 1px. 로고는 바탕에 맞는 판을 보인다(템플릿이 두 그림을 모두 두고 이 값으로 고른다) */
+  --c-rule: var(--color-ink); --c-logo-light: block; --c-logo-dark: none;
+  /* 웹 주 버튼 마우스 올림, 글자 선택 색 */
+  --c-accent-hover: var(--color-primary-hover); --c-sel-bg: var(--color-selection-bg); --c-sel-fg: var(--color-selection-fg);
+  /* 형광펜 모양(components.css): 밝은 판은 글자 아래쪽 0.45em 띠. 어두운 판은 theme-dark·theme-web이 글자 밑 얇은 선으로 바꾼다 */
+  --mark-h: 0.45em; --mark-y: 90%;
+  /* 펜 긋기 움직임: 빠르게 출발해 부드럽게 멈춘다 */
+  --ease-pen: cubic-bezier(0.16, 1, 0.3, 1);
+  --f-head: Pretendard, sans-serif; --f-body: Pretendard, sans-serif;
+  --w-head: 700; --w-body: 400; --tr-head: -0.025em; --lh-body: 1.65;
+  --r-card: var(--rounded-md); --shadow: none;
+}

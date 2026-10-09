@@ -1,0 +1,43 @@
+{
+  "id": "02_objects_nano21",
+  "scene_id": "02_objects",
+  "model_id": "nano21",
+  "requested_model": "gemini-nano-banana-2.1",
+  "requested_config": {
+    "size": "4K",
+    "aspect_ratio": "16:9"
+  },
+  "prompt": "봄맞이 카페의 나무 테이블에 머그컵을 정확히 세 개 놓아 주세요. 화면 왼쪽은 파란 컵, 가운데는 흰 컵, 오른쪽은 빨간 컵이며, 흰 컵 뒤의 투명 꽃병에는 노란 튤립이 정확히 다섯 송이 있습니다. 가로 화면의 실제 제품 사진처럼 표현하고, 그 외 물건과 글자는 넣지 마세요.",
+  "prompt_sha256": "81dcb498fcd5936e6ca5a140fb83c543bc2187555d7816be26ef4afb17156279",
+  "timestamp_utc": "2026-10-09T05:34:07.944039+00:00",
+  "status": "success",
+  "elapsed_seconds": 31.931,
+  "response_model": "gemini-nano-banana-2.1",
+  "usage": {
+    "promptTokenCount": 88,
+    "candidatesTokenCount": 4267,
+    "totalTokenCount": 5173,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 88
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 3780
+      }
+    ],
+    "thoughtsTokenCount": 818,
+    "serviceTier": "standard"
+  },
+  "response_id": "0HzIatbjGbXMrfcPtKzfqAU",
+  "path": "images/02_objects_nano21.jpg",
+  "width": 5504,
+  "height": 3072,
+  "bytes": 8048774,
+  "sha256": "c6b7414a115ca7027089b61e08707eec2953a05809e5fd1707901b73efa20e19",
+  "resolution_verified": true,
+  "evidence_path": "evidence/02_objects_nano21.json"
+}

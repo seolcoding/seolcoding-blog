@@ -1,0 +1,49 @@
+{
+  "id": "07_package_nano21",
+  "scene_id": "07_package",
+  "model_id": "nano21",
+  "requested_model": "gemini-nano-banana-2.1",
+  "requested_config": {
+    "size": "4K",
+    "aspect_ratio": "16:9"
+  },
+  "prompt": "[Commercial deliverable]\nCreate a professional 16:9 presentation board for a fictional MORNING POST drip-coffee box. Left 36%: a large flat front artwork. Middle 36%: a large flat back artwork. Right 28%: one assembled box in a clean three-quarter product view, showing the front and right side. Use an ivory board, generous margins and thin dividers. This is a design proposal board, not a pile of products.\n[Visual system]\nCream carton, forest-green type, coral sun emblem, subtle yellow-tulip line art. Front and assembled view must share identical typography, colors and front copy. Small text on the large flat back must be genuinely legible. Keep front, back and 3D views clearly separated. No barcode, invented compliance badge or extra logos.\n[Exact FRONT copy]\n모닝포스트\nMORNING POST\n봄날의 드립백\nSPRING DRIP COFFEE\nETHIOPIA BLEND\n5 BAGS × 10 g\nNET WT. 50 g\nTASTING NOTES: APRICOT · COCOA · FLORAL\n향미: 살구 · 코코아 · 꽃향기\n[Exact BACK copy]\n원재료명: 커피 100%\nIngredients: 100% roasted coffee.\n01 뜯기 / OPEN\n02 걸기 / HANG\n03 붓기 / POUR\n컵에 걸고 90–94°C 물 150 mL를 천천히 부어 주세요.\nHang on a cup and slowly pour 150 mL of water at 90–94°C.\n직사광선을 피하고 서늘한 곳에 보관하세요.\nStore in a cool place away from direct sunlight.\nBEST BEFORE 2027.04.30\nBATCH MP-0410\n[Constraints]\nPreserve Korean glyphs, English spelling, the × multiplication sign, the middle dots, en dash, °C, mL and decimal date. Do not translate, summarize or substitute text. Illustrate the three brewing steps with small, clear cup-and-dripbag diagrams next to the respective bilingual step. Do not invent nutrition data, manufacturing information or additional claims. The three-quarter box is a visual consistency test, so it must not become a different brand or flavor.",
+  "prompt_sha256": "755d3f3a3f664a6cfd72a4bbbb29110e644a736d0b8e71afc872bb920bf046f5",
+  "timestamp_utc": "2026-10-09T06:05:01.878103+00:00",
+  "status": "success",
+  "reference": null,
+  "instruction_language": "en",
+  "elapsed_seconds": 55.961,
+  "response_model": "gemini-nano-banana-2.1",
+  "usage": {
+    "promptTokenCount": 508,
+    "candidatesTokenCount": 5212,
+    "totalTokenCount": 7337,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 508
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 3780
+      }
+    ],
+    "thoughtsTokenCount": 1617,
+    "serviceTier": "standard"
+  },
+  "response_id": "DoTIaqGBDLeq9tMPvaTWkQ0",
+  "path": "commercial/images/07_package_nano21.jpg",
+  "width": 5504,
+  "height": 3072,
+  "bytes": 7610501,
+  "sha256": "6342d2c7597f9594bdc3e9adfe1393530b72cc03ffb9a59eac1b2538e53e0892",
+  "expected_dimensions": [
+    5504,
+    3072
+  ],
+  "resolution_verified": true,
+  "evidence_path": "commercial/evidence/07_package_nano21.json"
+}

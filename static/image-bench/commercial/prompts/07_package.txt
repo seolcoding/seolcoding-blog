@@ -1,0 +1,28 @@
+[Commercial deliverable]
+Create a professional 16:9 presentation board for a fictional MORNING POST drip-coffee box. Left 36%: a large flat front artwork. Middle 36%: a large flat back artwork. Right 28%: one assembled box in a clean three-quarter product view, showing the front and right side. Use an ivory board, generous margins and thin dividers. This is a design proposal board, not a pile of products.
+[Visual system]
+Cream carton, forest-green type, coral sun emblem, subtle yellow-tulip line art. Front and assembled view must share identical typography, colors and front copy. Small text on the large flat back must be genuinely legible. Keep front, back and 3D views clearly separated. No barcode, invented compliance badge or extra logos.
+[Exact FRONT copy]
+모닝포스트
+MORNING POST
+봄날의 드립백
+SPRING DRIP COFFEE
+ETHIOPIA BLEND
+5 BAGS × 10 g
+NET WT. 50 g
+TASTING NOTES: APRICOT · COCOA · FLORAL
+향미: 살구 · 코코아 · 꽃향기
+[Exact BACK copy]
+원재료명: 커피 100%
+Ingredients: 100% roasted coffee.
+01 뜯기 / OPEN
+02 걸기 / HANG
+03 붓기 / POUR
+컵에 걸고 90–94°C 물 150 mL를 천천히 부어 주세요.
+Hang on a cup and slowly pour 150 mL of water at 90–94°C.
+직사광선을 피하고 서늘한 곳에 보관하세요.
+Store in a cool place away from direct sunlight.
+BEST BEFORE 2027.04.30
+BATCH MP-0410
+[Constraints]
+Preserve Korean glyphs, English spelling, the × multiplication sign, the middle dots, en dash, °C, mL and decimal date. Do not translate, summarize or substitute text. Illustrate the three brewing steps with small, clear cup-and-dripbag diagrams next to the respective bilingual step. Do not invent nutrition data, manufacturing information or additional claims. The three-quarter box is a visual consistency test, so it must not become a different brand or flavor.

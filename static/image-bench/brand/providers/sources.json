@@ -1,0 +1,26 @@
+[
+  {
+    "company": "OpenAI",
+    "file": "openai.svg",
+    "source": "https://www.npmjs.com/package/@dev.icons/core/v/1.1.0",
+    "brand_guidelines": "https://openai.com/brand/",
+    "sha256": "0a7a96d73e8c4f7b7dc3fd7e63a0c96c561664fee75b6e6efb14f9e93f8df4c9",
+    "usage": "Provider identification next to actual model names; reference only, no partnership claim",
+    "modification": "Original extracted SVG preserved. Monochrome display follows light/dark background.",
+    "repository": "https://github.com/vorillaz/devicons/tree/main/packages/core",
+    "source_symbol": "openai-icon",
+    "package_version": "1.1.0"
+  },
+  {
+    "company": "Google",
+    "file": "google.svg",
+    "source": "https://www.npmjs.com/package/@dev.icons/core/v/1.1.0",
+    "brand_guidelines": "https://about.google/brand-resource-center/logos-list/",
+    "sha256": "7e462b6f3b3271c9e27254b2b79c67cd100cbe331ed5816b5a98620fa85dbdb0",
+    "usage": "Provider identification next to actual model names; reference only, no partnership claim",
+    "modification": "Original extracted SVG preserved. Original Google colors preserved.",
+    "repository": "https://github.com/vorillaz/devicons/tree/main/packages/core",
+    "source_symbol": "google-icon",
+    "package_version": "1.1.0"
+  }
+]

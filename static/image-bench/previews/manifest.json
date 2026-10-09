@@ -1,0 +1,362 @@
+[
+  {
+    "id": "05_menu_flare",
+    "preview": "previews/05_menu_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/05_menu_flare.png",
+    "original_sha256": "638285ce6b8dfdca8adb7d6a86dabf17a3858f18c748c991abc0eda30d8fa31a",
+    "original_bytes": 5868534,
+    "preview_bytes": 142654
+  },
+  {
+    "id": "05_menu_nano21",
+    "preview": "previews/05_menu_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "commercial/images/05_menu_nano21.jpg",
+    "original_sha256": "6c0b4c7c87c83f0b131ce199278eab9c6a8ed6baf18e88463b24fb92485d1ef6",
+    "original_bytes": 7904284,
+    "preview_bytes": 157780
+  },
+  {
+    "id": "05_menu_sunburst",
+    "preview": "previews/05_menu_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/05_menu_sunburst.png",
+    "original_sha256": "8b5646de15815f2c249f7e1807b2387ca62979bf0c675f6e28b420dcccc0cde7",
+    "original_bytes": 5746354,
+    "preview_bytes": 146734
+  },
+  {
+    "id": "06_document_flare",
+    "preview": "previews/06_document_flare.webp",
+    "preview_dimensions": [
+      960,
+      1440
+    ],
+    "original": "commercial/images/06_document_flare.png",
+    "original_sha256": "18aee486b0a04b703778f49203c0f250e239f537d3a0b478b832614fb504c30e",
+    "original_bytes": 5270936,
+    "preview_bytes": 142556
+  },
+  {
+    "id": "06_document_nano21",
+    "preview": "previews/06_document_nano21.webp",
+    "preview_dimensions": [
+      966,
+      1440
+    ],
+    "original": "commercial/images/06_document_nano21.jpg",
+    "original_sha256": "eb671b209aa1660b0ad5d607e7b5f2207c0d2f8a2879c7ded9a5b10ce4ad3b87",
+    "original_bytes": 7120729,
+    "preview_bytes": 128054
+  },
+  {
+    "id": "06_document_sunburst",
+    "preview": "previews/06_document_sunburst.webp",
+    "preview_dimensions": [
+      960,
+      1440
+    ],
+    "original": "commercial/images/06_document_sunburst.png",
+    "original_sha256": "cecac483167665aa07c95fd9b4d36c30312e6940d9913f8f99e2b9e07ff0d84b",
+    "original_bytes": 5165769,
+    "preview_bytes": 142190
+  },
+  {
+    "id": "07_package_flare",
+    "preview": "previews/07_package_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/07_package_flare.png",
+    "original_sha256": "ac82f61870fef4ddb1cb783e25700b64a88da576e07dcd9b73aa684f5dbc415b",
+    "original_bytes": 8621690,
+    "preview_bytes": 119058
+  },
+  {
+    "id": "07_package_nano21",
+    "preview": "previews/07_package_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "commercial/images/07_package_nano21.jpg",
+    "original_sha256": "6342d2c7597f9594bdc3e9adfe1393530b72cc03ffb9a59eac1b2538e53e0892",
+    "original_bytes": 7610501,
+    "preview_bytes": 103868
+  },
+  {
+    "id": "07_package_sunburst",
+    "preview": "previews/07_package_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/07_package_sunburst.png",
+    "original_sha256": "40e3ffaac4f12476818b56e8a4824eb7e92df239064e043b8bf28cd2954c0986",
+    "original_bytes": 9455570,
+    "preview_bytes": 136994
+  },
+  {
+    "id": "08_character_flare",
+    "preview": "previews/08_character_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/08_character_flare.png",
+    "original_sha256": "d5bb50c76d425840e22c2363035f32a8c4b1397ffe0e3eb8f6003b33c2188b9d",
+    "original_bytes": 10131461,
+    "preview_bytes": 87292
+  },
+  {
+    "id": "08_character_nano21",
+    "preview": "previews/08_character_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "commercial/images/08_character_nano21.jpg",
+    "original_sha256": "c6a025783978f7a5c68afbf729523620508c9d231d5f2cec26110b50f26f9c73",
+    "original_bytes": 6699681,
+    "preview_bytes": 74888
+  },
+  {
+    "id": "08_character_sunburst",
+    "preview": "previews/08_character_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/08_character_sunburst.png",
+    "original_sha256": "257df58d75c4ff635823fe187965f8c47328901459a89ed8436b4868d8c34418",
+    "original_bytes": 9402458,
+    "preview_bytes": 84310
+  },
+  {
+    "id": "09_comic_flare",
+    "preview": "previews/09_comic_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/09_comic_flare.png",
+    "original_sha256": "dc34ce6545799c74b8864b9d4b6fbc07d19caff491f26701261716b39900a917",
+    "original_bytes": 13735610,
+    "preview_bytes": 285400
+  },
+  {
+    "id": "09_comic_nano21",
+    "preview": "previews/09_comic_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "commercial/images/09_comic_nano21.jpg",
+    "original_sha256": "0e9d4e3914f372681800de3121403d6e58ab41c3174258f153a2dc11c6c1f377",
+    "original_bytes": 7931618,
+    "preview_bytes": 195024
+  },
+  {
+    "id": "09_comic_sunburst",
+    "preview": "previews/09_comic_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/09_comic_sunburst.png",
+    "original_sha256": "bb11c42e368977d7e020384c49f026778b43e97245aabd298d833a01adf18ad0",
+    "original_bytes": 12862135,
+    "preview_bytes": 288222
+  },
+  {
+    "id": "10_storybook_flare",
+    "preview": "previews/10_storybook_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/10_storybook_flare.png",
+    "original_sha256": "de7ff0e9597247c4f4721ecb613d32ecc4fb52d99e167314a3a801b10d9e3170",
+    "original_bytes": 12740293,
+    "preview_bytes": 258886
+  },
+  {
+    "id": "10_storybook_nano21",
+    "preview": "previews/10_storybook_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "commercial/images/10_storybook_nano21.jpg",
+    "original_sha256": "7fa2daefec12e7cb105c79aca8f9ce61873b1d2838bb135995bc2a1ea67cd0a5",
+    "original_bytes": 8347475,
+    "preview_bytes": 176284
+  },
+  {
+    "id": "10_storybook_sunburst",
+    "preview": "previews/10_storybook_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "commercial/images/10_storybook_sunburst.png",
+    "original_sha256": "6ae8430d3c24f8b1499a2676300629b6b33346959dccab87fedc8c4c0bb0fb02",
+    "original_bytes": 12391535,
+    "preview_bytes": 295420
+  },
+  {
+    "id": "01_light_flare",
+    "preview": "previews/01_light_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/01_light_flare.png",
+    "original_sha256": "26301d9354b13b7dd51158108e9254a668337d9fcc16cd77f7406f2d8b55117c",
+    "original_bytes": 10541112,
+    "preview_bytes": 195814
+  },
+  {
+    "id": "01_light_nano21",
+    "preview": "previews/01_light_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "images/01_light_nano21.jpg",
+    "original_sha256": "1a68015e1584864fc835c48b042b8427ff719fce429d0d7f4e28901b1fde66ea",
+    "original_bytes": 8653788,
+    "preview_bytes": 137324
+  },
+  {
+    "id": "01_light_sunburst",
+    "preview": "previews/01_light_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/01_light_sunburst.png",
+    "original_sha256": "5a7337f38882619a2a97c5a04d9f9ea795099f9a3f378f34c2ff7dce986b5b11",
+    "original_bytes": 11548402,
+    "preview_bytes": 222510
+  },
+  {
+    "id": "02_objects_flare",
+    "preview": "previews/02_objects_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/02_objects_flare.png",
+    "original_sha256": "f6a362c539ba9b2eb0cd7e749e143a55b63ea5e02d36048335d694f1234591af",
+    "original_bytes": 9015921,
+    "preview_bytes": 116568
+  },
+  {
+    "id": "02_objects_nano21",
+    "preview": "previews/02_objects_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "images/02_objects_nano21.jpg",
+    "original_sha256": "c6b7414a115ca7027089b61e08707eec2953a05809e5fd1707901b73efa20e19",
+    "original_bytes": 8048774,
+    "preview_bytes": 85856
+  },
+  {
+    "id": "02_objects_sunburst",
+    "preview": "previews/02_objects_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/02_objects_sunburst.png",
+    "original_sha256": "3b4a76b469792b9e06dd1eedfb550c3a2f7c1dd4fcfed8a2be4c69f69c31a2aa",
+    "original_bytes": 8573500,
+    "preview_bytes": 101960
+  },
+  {
+    "id": "03_poster_flare",
+    "preview": "previews/03_poster_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/03_poster_flare.png",
+    "original_sha256": "3434455d941529e75e06855346715d70d27ec461bdf072965ecf2a47e25e9af9",
+    "original_bytes": 5797977,
+    "preview_bytes": 82464
+  },
+  {
+    "id": "03_poster_nano21",
+    "preview": "previews/03_poster_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "images/03_poster_nano21.jpg",
+    "original_sha256": "7ea332ccd9e534d6bebf907f22235a2cce3b0133f6a5774fca3267f44a574e99",
+    "original_bytes": 7029405,
+    "preview_bytes": 79890
+  },
+  {
+    "id": "03_poster_sunburst",
+    "preview": "previews/03_poster_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/03_poster_sunburst.png",
+    "original_sha256": "273db50781c03125c2c79da6c779c79190820df4bde2ee1009957c663a101508",
+    "original_bytes": 6217812,
+    "preview_bytes": 88318
+  },
+  {
+    "id": "04_hands_flare",
+    "preview": "previews/04_hands_flare.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/04_hands_flare.png",
+    "original_sha256": "aae6433360b2413973875544578281b2d31cc0431c86d9bb5a17a27cf5ea4d1f",
+    "original_bytes": 8841097,
+    "preview_bytes": 105136
+  },
+  {
+    "id": "04_hands_nano21",
+    "preview": "previews/04_hands_nano21.webp",
+    "preview_dimensions": [
+      1440,
+      804
+    ],
+    "original": "images/04_hands_nano21.jpg",
+    "original_sha256": "be3b28107cc68c7ed72c92393afdbe73273b1e2b7ba8124fb727c540b725ab6b",
+    "original_bytes": 8351822,
+    "preview_bytes": 99314
+  },
+  {
+    "id": "04_hands_sunburst",
+    "preview": "previews/04_hands_sunburst.webp",
+    "preview_dimensions": [
+      1440,
+      810
+    ],
+    "original": "images/04_hands_sunburst.png",
+    "original_sha256": "f0b493f224adbc66e3b6db71289f37136c7fb7fa715b4c974dc65a90454bbd63",
+    "original_bytes": 9681231,
+    "preview_bytes": 158164
+  }
+]

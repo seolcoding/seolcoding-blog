@@ -1,0 +1,127 @@
+{
+  "scene_id": "09_comic",
+  "status": "success",
+  "image_path": "09_comic.png",
+  "requested_prompt": "[입력 이미지의 역할]\n첨부 이미지 1은 토끼 모리의 공통 캐릭터 참조 시트다. 이 시트의 레이아웃을 다시 그리는 것이 아니라, 디자인을 유지해 아래 6컷 코믹을 새로 만든다. 모든 모델에 같은 참조 파일을 제공한다.\n[납품 목적과 스타일]\n한·영 독자에게 보여줄 완성된 가로형 6컷 코믹 한 페이지. 따뜻한 파스텔 채색, 진한 갈색의 일정한 선, 섬세한 종이 질감. 캐릭터 시트의 모리 얼굴·귀·노란 우비·초록 장화·주황 가방을 유지한다. 친구 ‘우리’는 갈색 가시와 연한 얼굴을 가진 작은 고슴도치이며, 보라색 조끼와 둥근 안경을 모든 등장 컷에서 동일하게 착용한다.\n[페이지와 읽는 순서]\n16:9. 위쪽 10%에 ‘비 오는 날의 책 한 권’, 그 아래 ‘A Book for a Rainy Day’를 정확히 넣는다. 아래에는 똑같은 크기의 3열×2행 패널 총 6개와 일정한 흰 여백을 둔다. 위 행 왼쪽에서 오른쪽으로 1·2·3컷, 아래 행 왼쪽에서 오른쪽으로 4·5·6컷 순서다. 각 컷마다 한국어 말풍선 하나, 하단 영어 자막 한 줄을 넣는다. 말풍선 꼬리는 지정된 화자를 정확히 가리킨다. 영어는 추가 말풍선이 아니라 해당 컷 안의 하단 자막이다.\n[컷별 대본과 시점; 모든 대사는 원문 그대로]\n1컷: 넓은 외부 전경. 모리가 책방 문 앞에서 파란 책을 들고 빗속을 바라본다. 화자는 모리다.\n한국어 말풍선: “비가 와도 괜찮아.”\n영어 자막: “Rain won't stop us.”\n\n2컷: 고슴도치 우리의 얼굴과 손을 가까이 본 장면. 밖에서 기다리는 우리가 젖을까 봐 파란 책을 걱정한다. 화자는 우리다.\n한국어 말풍선: “책이 젖겠어!”\n영어 자막: “The book will get wet!”\n\n3컷: 약간 위에서 내려다본 장면. 모리가 빨간 우산을 펼쳐 우리도 들어오라고 권한다. 화자는 모리다.\n한국어 말풍선: “내 우산을 같이 쓰자.”\n영어 자막: “Let's share my umbrella.”\n\n4컷: 두 캐릭터의 옆모습. 모리와 우리가 빨간 우산 아래 함께 걷는다. 화자는 우리다.\n한국어 말풍선: “고마워, 모리!”\n영어 자막: “Thank you, Mori!”\n\n5컷: 모리의 어깨 너머로 보는 실내 장면. 둘은 작은 도서관에 도착했고 모리가 마른 파란 책을 우리에게 건넨다. 화자는 모리다.\n한국어 말풍선: “이 책은 네가 먼저 읽어.”\n영어 자막: “You can read it first.”\n\n6컷: 따뜻한 마무리 클로즈업. 비가 보이는 창가에 둘이 나란히 앉아 파란 책을 함께 읽는다. 화자는 우리다.\n한국어 말풍선: “함께라서 더 좋아.”\n영어 자막: “It's better together.”\n[연속성과 제약]\n파란 책과 빨간 우산의 색·크기는 유지하고 장면마다 소품이 갑자기 바뀌거나 복제되지 않게 한다. 빗속에서 도서관 실내로 들어오는 사건 흐름이 분명해야 한다. 마지막 책은 마른 상태다. 인물의 역할·대사·읽는 순서·패널 수를 바꾸지 않는다. 여섯 컷에 같은 정면 구도를 반복하지 않는다. 참조 시트의 라벨을 만화에 복사하지 않으며, 패널 번호나 지시문·추가 대사·로고는 넣지 않는다.\n",
+  "actual_tool_prompt": null,
+  "prompt_sha256": "ad6738a67c7d8befe04a68f6aaf41a3461b7bb0d3f533634f3b23104d02dece9",
+  "actual_prompt_sha256": null,
+  "reference": {
+    "original_path": "commercial/images/08_character_sunburst.png",
+    "sha256": "257df58d75c4ff635823fe187965f8c47328901459a89ed8436b4868d8c34418",
+    "actually_passed": true
+  },
+  "image_model": null,
+  "model_evidence": {
+    "official_url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+    "official_model_id": "gpt-image-2",
+    "note": "Official ID verified; this does not identify the model of a built-in generation response.",
+    "response_evidence_file": "09_comic_response_evidence.json",
+    "session_evidence_file": "session_tool_evidence.json",
+    "observed_response_fields": [
+      "image_url",
+      "output_hint"
+    ],
+    "per_response_model_id_exposed": false
+  },
+  "agent_cli_version": "codex-cli 0.162.0",
+  "width": 1672,
+  "height": 941,
+  "sha256": "922aae6ed06394675ffde53835db99a5e299dac0a135254eaffaec816bd921a0",
+  "elapsed_seconds": 95.594,
+  "usage": null,
+  "cost_usd": null,
+  "generation_route": "codex_builtin_image_gen",
+  "note": "Built-in tool does not expose size, quality, or model selection arguments. Exact original reference file passed through referenced_image_paths. First successful output preserved byte-for-byte. Response exposes no image model ID, revised prompt, usage, or cost. Supplied tool argument exactly matches source UTF-8 bytes including final newline. Internal prompt rewriting is unobservable; identical downstream image-model prompts cannot be asserted. Elapsed time is measured tool wall time.",
+  "id": "09_comic_codex_builtin",
+  "model_id": "codex_builtin",
+  "path": "legacy/openai/09_comic.png",
+  "preview": "previews/09_comic_codex_builtin.webp",
+  "display_name": "Codex 내장 이미지 · 모델 미노출",
+  "company": "OpenAI",
+  "agent": "Codex",
+  "price_label": "GPT Image 2 API 참고 $0.0039–$0.1388",
+  "price_note": "GPT Image 2라고 가정한 API 이미지 출력분. 참고 크기 1664×944, low–high 품질. 입력·참조 비용 별도, 실제 Codex 모델·품질·요금 미확인.",
+  "api_price_reference": {
+    "provider": "openai",
+    "scene_id": "09_comic",
+    "image_path": "09_comic.png",
+    "image_sha256": "922aae6ed06394675ffde53835db99a5e299dac0a135254eaffaec816bd921a0",
+    "dimension_evidence": "Pillow",
+    "result_json_present": true,
+    "metadata_dimensions": [
+      1672,
+      941
+    ],
+    "requested_reference_model": "gpt-image-2",
+    "observed_image_model": null,
+    "model_status": "conditional_reference_model_estimate; tool model not verified",
+    "quality": null,
+    "quality_status": "auto unconfirmed / auto 미확인; Codex client request quality not supplied",
+    "actual_usage": null,
+    "actual_tool_cost_usd": null,
+    "record_reported_cost_usd_unvalidated": null,
+    "prompt_input_token_estimate": null,
+    "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+    "prompt_character_count": 1534,
+    "reference_image_evidence": {
+      "original_path": "08_character_sunburst.png",
+      "sha256": "257df58d75c4ff635823fe187965f8c47328901459a89ed8436b4868d8c34418",
+      "actually_passed": true
+    },
+    "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+    "missing_fields": [
+      "Actual per-image model id when not returned by the built-in tool",
+      "Actual API image output tokens",
+      "Actual API input text and image tokens",
+      "Effective OpenAI quality and size request",
+      "Google effective resolution tier when not observed",
+      "Output text/thinking tokens and any grounding charges",
+      "Actual built-in tool billing"
+    ],
+    "reference_input_tokens": null,
+    "input_cost_usd": null,
+    "total_api_cost_usd": null,
+    "actual_dimensions": [
+      1672,
+      941
+    ],
+    "actual_size_api_valid": false,
+    "actual_size_validation_errors": [
+      "both edges must be multiples of 16"
+    ],
+    "reference_type": "adjacent_or_standard_valid_api_size_only",
+    "reference_dimensions": [
+      1664,
+      944
+    ],
+    "equally_near_reference_dimensions": [
+      [
+        1664,
+        944
+      ],
+      [
+        1680,
+        944
+      ]
+    ],
+    "output_estimates_by_quality": {
+      "low": {
+        "estimated_output_tokens": 129,
+        "estimated_image_output_cost_usd": 0.00387
+      },
+      "medium": {
+        "estimated_output_tokens": 1157,
+        "estimated_image_output_cost_usd": 0.03471
+      },
+      "high": {
+        "estimated_output_tokens": 4628,
+        "estimated_image_output_cost_usd": 0.13884
+      }
+    },
+    "display_price_text_ko": "GPT Image 2 조건부 API 출력 참고 $0.00387–$0.13884/장 · quality auto 미확인 · 1664×944 API 참고 크기"
+  },
+  "comparison_note": "최신 API와 도구·해상도·품질이 다릅니다. 생성 모델 ID는 Codex 응답에서 노출되지 않아 GPT Image 2로 확정하지 않았습니다.",
+  "review_note": "6컷과 두 캐릭터를 그렸습니다. 영문 자막을 요청과 달리 컷 바깥에 배치했습니다.",
+  "evidence_path": "legacy/openai/09_comic_codex_builtin_public.json"
+}

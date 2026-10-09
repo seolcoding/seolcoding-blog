@@ -1,0 +1,43 @@
+{
+  "id": "04_hands_nano21",
+  "scene_id": "04_hands",
+  "model_id": "nano21",
+  "requested_model": "gemini-nano-banana-2.1",
+  "requested_config": {
+    "size": "4K",
+    "aspect_ratio": "16:9"
+  },
+  "prompt": "동네 카페에서 바리스타가 첫 커피를 따르는 순간을 손과 도구 중심의 실제 사진처럼 그려 주세요. 왼손은 파란 머그컵의 손잡이를 잡고 오른손은 은색 주전자를 잡으며, 주전자 입구에서 나온 커피 줄기가 컵 안으로 이어지게 해 주세요. 따뜻한 아침 빛의 가로 화면이며 얼굴과 글자는 넣지 마세요.",
+  "prompt_sha256": "a3b0d8551a82b3b371a5b97c82656417d30b02b48a64657bf31e26336e853cad",
+  "timestamp_utc": "2026-10-09T05:36:10.749154+00:00",
+  "status": "success",
+  "elapsed_seconds": 50.866,
+  "response_model": "gemini-nano-banana-2.1",
+  "usage": {
+    "promptTokenCount": 91,
+    "candidatesTokenCount": 4912,
+    "totalTokenCount": 6022,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 91
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 3780
+      }
+    ],
+    "thoughtsTokenCount": 1019,
+    "serviceTier": "standard"
+  },
+  "response_id": "S33IauHuA4av2roPp-2XgAw",
+  "path": "images/04_hands_nano21.jpg",
+  "width": 5504,
+  "height": 3072,
+  "bytes": 8351822,
+  "sha256": "be3b28107cc68c7ed72c92393afdbe73273b1e2b7ba8124fb727c540b725ab6b",
+  "resolution_verified": true,
+  "evidence_path": "evidence/04_hands_nano21.json"
+}

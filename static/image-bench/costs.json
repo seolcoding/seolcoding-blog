@@ -1,0 +1,1127 @@
+{
+  "checked_date": "2026-10-09",
+  "currency": "USD",
+  "processing": "Standard; no Batch",
+  "status": "usage_based_estimate_not_invoice",
+  "rates_usd_per_million": {
+    "openai": {
+      "text_input": 5,
+      "image_input": 8,
+      "image_output": 30
+    },
+    "gemini-nano-banana-2.1": {
+      "input": 1.5,
+      "text_and_thinking_output": 7.5,
+      "image_output": 30
+    },
+    "gemini-3.1-flash-image": {
+      "input": 0.5,
+      "text_and_thinking_output": 3,
+      "image_output": 60
+    }
+  },
+  "sources": [
+    {
+      "name": "Sunburst 공식 모델·가격",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst"
+    },
+    {
+      "name": "Flare 공식 모델·가격",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare"
+    },
+    {
+      "name": "OpenAI 모델 선택 안내",
+      "url": "https://developers.openai.com/api/docs/guides/image-generation"
+    },
+    {
+      "name": "Google 공식 가격",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "name": "Nano Banana 2.1 공식 모델",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1"
+    }
+  ],
+  "rows": [
+    {
+      "id": "01_light_flare",
+      "group": "basic",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 52.993,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/01_light_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400845,
+      "components": {
+        "text_input": {
+          "tokens": 117,
+          "usd_per_million": 5,
+          "usd": 0.000585
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "01_light_nano21",
+      "group": "basic",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 37.702,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "evidence/01_light_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.1249245,
+      "components": {
+        "input": {
+          "tokens": 93,
+          "usd_per_million": 1.5,
+          "usd": 0.0001395
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 1518,
+          "usd_per_million": 7.5,
+          "usd": 0.011385
+        }
+      }
+    },
+    {
+      "id": "01_light_sunburst",
+      "group": "basic",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 97.706,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/01_light_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400845,
+      "components": {
+        "text_input": {
+          "tokens": 117,
+          "usd_per_million": 5,
+          "usd": 0.000585
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "02_objects_flare",
+      "group": "basic",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 47.874,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/02_objects_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400785,
+      "components": {
+        "text_input": {
+          "tokens": 105,
+          "usd_per_million": 5,
+          "usd": 0.000525
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "02_objects_nano21",
+      "group": "basic",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 31.931,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "evidence/02_objects_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.1233195,
+      "components": {
+        "input": {
+          "tokens": 88,
+          "usd_per_million": 1.5,
+          "usd": 0.000132
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 1305,
+          "usd_per_million": 7.5,
+          "usd": 0.0097875
+        }
+      }
+    },
+    {
+      "id": "02_objects_sunburst",
+      "group": "basic",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 88.424,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/02_objects_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400785,
+      "components": {
+        "text_input": {
+          "tokens": 105,
+          "usd_per_million": 5,
+          "usd": 0.000525
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "03_poster_flare",
+      "group": "basic",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 42.085,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/03_poster_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400885,
+      "components": {
+        "text_input": {
+          "tokens": 125,
+          "usd_per_million": 5,
+          "usd": 0.000625
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "03_poster_nano21",
+      "group": "basic",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 34.044,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "evidence/03_poster_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.1277985,
+      "components": {
+        "input": {
+          "tokens": 114,
+          "usd_per_million": 1.5,
+          "usd": 0.000171
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 1897,
+          "usd_per_million": 7.5,
+          "usd": 0.0142275
+        }
+      }
+    },
+    {
+      "id": "03_poster_sunburst",
+      "group": "basic",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 76.235,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/03_poster_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400885,
+      "components": {
+        "text_input": {
+          "tokens": 125,
+          "usd_per_million": 5,
+          "usd": 0.000625
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "04_hands_flare",
+      "group": "basic",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 47.583,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/04_hands_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400775,
+      "components": {
+        "text_input": {
+          "tokens": 103,
+          "usd_per_million": 5,
+          "usd": 0.000515
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "04_hands_nano21",
+      "group": "basic",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 50.866,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "evidence/04_hands_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.129669,
+      "components": {
+        "input": {
+          "tokens": 91,
+          "usd_per_million": 1.5,
+          "usd": 0.0001365
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 2151,
+          "usd_per_million": 7.5,
+          "usd": 0.0161325
+        }
+      }
+    },
+    {
+      "id": "04_hands_sunburst",
+      "group": "basic",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 91.598,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "evidence/04_hands_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.400775,
+      "components": {
+        "text_input": {
+          "tokens": 103,
+          "usd_per_million": 5,
+          "usd": 0.000515
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "05_menu_flare",
+      "group": "commercial",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 44.665,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/05_menu_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.40523,
+      "components": {
+        "text_input": {
+          "tokens": 994,
+          "usd_per_million": 5,
+          "usd": 0.00497
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "05_menu_nano21",
+      "group": "commercial",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 53.588,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "commercial/evidence/05_menu_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.149877,
+      "components": {
+        "input": {
+          "tokens": 973,
+          "usd_per_million": 1.5,
+          "usd": 0.0014595
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 4669,
+          "usd_per_million": 7.5,
+          "usd": 0.0350175
+        }
+      }
+    },
+    {
+      "id": "05_menu_sunburst",
+      "group": "commercial",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 81.187,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/05_menu_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.40523,
+      "components": {
+        "text_input": {
+          "tokens": 994,
+          "usd_per_million": 5,
+          "usd": 0.00497
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "06_document_flare",
+      "group": "commercial",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 48.893,
+      "dimensions": [
+        2336,
+        3504
+      ],
+      "evidence": "commercial/evidence/06_document_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.473085,
+      "components": {
+        "text_input": {
+          "tokens": 747,
+          "usd_per_million": 5,
+          "usd": 0.003735
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 15645,
+          "usd_per_million": 30,
+          "usd": 0.46935
+        }
+      }
+    },
+    {
+      "id": "06_document_nano21",
+      "group": "commercial",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 47.964,
+      "dimensions": [
+        3392,
+        5056
+      ],
+      "evidence": "commercial/evidence/06_document_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.1442685,
+      "components": {
+        "input": {
+          "tokens": 804,
+          "usd_per_million": 1.5,
+          "usd": 0.001206
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 3955,
+          "usd_per_million": 7.5,
+          "usd": 0.0296625
+        }
+      }
+    },
+    {
+      "id": "06_document_sunburst",
+      "group": "commercial",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 91.033,
+      "dimensions": [
+        2336,
+        3504
+      ],
+      "evidence": "commercial/evidence/06_document_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.473085,
+      "components": {
+        "text_input": {
+          "tokens": 747,
+          "usd_per_million": 5,
+          "usd": 0.003735
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 15645,
+          "usd_per_million": 30,
+          "usd": 0.46935
+        }
+      }
+    },
+    {
+      "id": "07_package_flare",
+      "group": "commercial",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 46.295,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/07_package_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.402675,
+      "components": {
+        "text_input": {
+          "tokens": 483,
+          "usd_per_million": 5,
+          "usd": 0.002415
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "07_package_nano21",
+      "group": "commercial",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 55.961,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "commercial/evidence/07_package_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.1370295,
+      "components": {
+        "input": {
+          "tokens": 508,
+          "usd_per_million": 1.5,
+          "usd": 0.000762
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 3049,
+          "usd_per_million": 7.5,
+          "usd": 0.0228675
+        }
+      }
+    },
+    {
+      "id": "07_package_sunburst",
+      "group": "commercial",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 84.374,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/07_package_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.402675,
+      "components": {
+        "text_input": {
+          "tokens": 483,
+          "usd_per_million": 5,
+          "usd": 0.002415
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "08_character_flare",
+      "group": "commercial",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 47.936,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/08_character_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.4035,
+      "components": {
+        "text_input": {
+          "tokens": 648,
+          "usd_per_million": 5,
+          "usd": 0.00324
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "08_character_nano21",
+      "group": "commercial",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 49.866,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "commercial/evidence/08_character_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.145374,
+      "components": {
+        "input": {
+          "tokens": 601,
+          "usd_per_million": 1.5,
+          "usd": 0.0009015
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 4143,
+          "usd_per_million": 7.5,
+          "usd": 0.0310725
+        }
+      }
+    },
+    {
+      "id": "08_character_sunburst",
+      "group": "commercial",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 79.44,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/08_character_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.4035,
+      "components": {
+        "text_input": {
+          "tokens": 648,
+          "usd_per_million": 5,
+          "usd": 0.00324
+        },
+        "image_input": {
+          "tokens": 0,
+          "usd_per_million": 8,
+          "usd": 0.0
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "09_comic_flare",
+      "group": "commercial",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 67.397,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/09_comic_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.417104,
+      "components": {
+        "text_input": {
+          "tokens": 956,
+          "usd_per_million": 5,
+          "usd": 0.00478
+        },
+        "image_input": {
+          "tokens": 1508,
+          "usd_per_million": 8,
+          "usd": 0.012064
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "09_comic_nano21",
+      "group": "commercial",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 41.323,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "commercial/evidence/09_comic_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.130989,
+      "components": {
+        "input": {
+          "tokens": 2021,
+          "usd_per_million": 1.5,
+          "usd": 0.0030315
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 1941,
+          "usd_per_million": 7.5,
+          "usd": 0.0145575
+        }
+      }
+    },
+    {
+      "id": "09_comic_sunburst",
+      "group": "commercial",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 105.475,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/09_comic_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.417104,
+      "components": {
+        "text_input": {
+          "tokens": 956,
+          "usd_per_million": 5,
+          "usd": 0.00478
+        },
+        "image_input": {
+          "tokens": 1508,
+          "usd_per_million": 8,
+          "usd": 0.012064
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "10_storybook_flare",
+      "group": "commercial",
+      "model_id": "flare",
+      "requested_model": "gpt-image-2.5-flare-2026-09-08",
+      "elapsed_seconds": 65.572,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/10_storybook_flare.json",
+      "basis": "saved_api_usage",
+      "usd": 0.416399,
+      "components": {
+        "text_input": {
+          "tokens": 815,
+          "usd_per_million": 5,
+          "usd": 0.004075
+        },
+        "image_input": {
+          "tokens": 1508,
+          "usd_per_million": 8,
+          "usd": 0.012064
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "10_storybook_nano21",
+      "group": "commercial",
+      "model_id": "nano21",
+      "requested_model": "gemini-nano-banana-2.1",
+      "elapsed_seconds": 61.976,
+      "dimensions": [
+        5504,
+        3072
+      ],
+      "evidence": "commercial/evidence/10_storybook_nano21.json",
+      "basis": "saved_api_usage",
+      "usd": 0.14094,
+      "components": {
+        "input": {
+          "tokens": 1895,
+          "usd_per_million": 1.5,
+          "usd": 0.0028425
+        },
+        "image_output": {
+          "tokens": 3780,
+          "usd_per_million": 30,
+          "usd": 0.1134
+        },
+        "text_and_thinking_output": {
+          "tokens": 3293,
+          "usd_per_million": 7.5,
+          "usd": 0.0246975
+        }
+      }
+    },
+    {
+      "id": "10_storybook_sunburst",
+      "group": "commercial",
+      "model_id": "sunburst",
+      "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+      "elapsed_seconds": 111.602,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "evidence": "commercial/evidence/10_storybook_sunburst.json",
+      "basis": "saved_api_usage",
+      "usd": 0.416399,
+      "components": {
+        "text_input": {
+          "tokens": 815,
+          "usd_per_million": 5,
+          "usd": 0.004075
+        },
+        "image_input": {
+          "tokens": 1508,
+          "usd_per_million": 8,
+          "usd": 0.012064
+        },
+        "image_output": {
+          "tokens": 13342,
+          "usd_per_million": 30,
+          "usd": 0.40026
+        }
+      }
+    },
+    {
+      "id": "google_nano21_newkey_api_1.jpg",
+      "group": "initial_tests",
+      "requested_model": "gemini-nano-banana-2.1",
+      "evidence": "evidence/initial_tests.json",
+      "basis": "saved_api_usage",
+      "usd": 0.0428535,
+      "components": {
+        "input": {
+          "tokens": 174,
+          "usd_per_million": 1.5,
+          "usd": 0.000261
+        },
+        "image_output": {
+          "tokens": 1120,
+          "usd_per_million": 30,
+          "usd": 0.0336
+        },
+        "text_and_thinking_output": {
+          "tokens": 1199,
+          "usd_per_million": 7.5,
+          "usd": 0.0089925
+        }
+      }
+    },
+    {
+      "id": "google_nano2_newkey_api_1.jpg",
+      "group": "initial_tests",
+      "requested_model": "gemini-3.1-flash-image",
+      "evidence": "evidence/initial_tests.json",
+      "basis": "saved_api_usage",
+      "usd": 0.068097,
+      "components": {
+        "input": {
+          "tokens": 174,
+          "usd_per_million": 0.5,
+          "usd": 8.7e-05
+        },
+        "image_output": {
+          "tokens": 1120,
+          "usd_per_million": 60,
+          "usd": 0.0672
+        },
+        "text_and_thinking_output": {
+          "tokens": 270,
+          "usd_per_million": 3,
+          "usd": 0.00081
+        }
+      }
+    }
+  ],
+  "totals_usd": {
+    "basic": 3.7122915,
+    "commercial": 5.884464,
+    "initial_tests": 0.1109505,
+    "benchmark": 9.5967555,
+    "measured_scope": 9.707706
+  },
+  "models": [
+    {
+      "id": "sunburst",
+      "official_role": "정밀한 이미지 편집을 우선하는 OpenAI 모델",
+      "observed": "메뉴의 요청하지 않은 영문 슬로건과 만화 배경 안내문을 추가했습니다. 코믹·동화의 배경을 세밀하게 그렸습니다.",
+      "mean_seconds": 90.707,
+      "min_seconds": 76.235,
+      "max_seconds": 111.602,
+      "mean_usd": 0.4121283,
+      "total_usd": 4.121283,
+      "count": 10,
+      "min_usd": 0.400775,
+      "max_usd": 0.473085
+    },
+    {
+      "id": "flare",
+      "official_role": "빠른 일상 이미지 생성을 우선하는 OpenAI 모델",
+      "observed": "메뉴와 견적을 읽기 쉽게 배치했습니다. 코믹에서는 책의 소유가 컷 사이에서 바뀌고 지정된 측면 구도가 약했습니다.",
+      "mean_seconds": 51.129,
+      "min_seconds": 42.085,
+      "max_seconds": 67.397,
+      "mean_usd": 0.4121283,
+      "total_usd": 4.121283,
+      "count": 10,
+      "min_usd": 0.400775,
+      "max_usd": 0.473085
+    },
+    {
+      "id": "nano21",
+      "official_role": "효율적인 생성·대화 편집 중심의 Google 모델",
+      "observed": "더 큰 4K 원본을 반환했습니다. 코믹 2컷에서 책이 공중에 떠 있고 마지막 말풍선의 화자가 모호합니다.",
+      "mean_seconds": 46.522,
+      "min_seconds": 31.931,
+      "max_seconds": 61.976,
+      "mean_usd": 0.13541895,
+      "total_usd": 1.3541895,
+      "count": 10,
+      "min_usd": 0.1233195,
+      "max_usd": 0.149877
+    }
+  ],
+  "unmeasured": [
+    {
+      "group": "initial_tests",
+      "file": "../openai_sunburst.png",
+      "reason": "CLI에서 토큰 사용량을 보존하지 않아 비용을 산정할 수 없습니다."
+    },
+    {
+      "group": "initial_tests",
+      "file": "../openai_flare.png",
+      "reason": "CLI에서 토큰 사용량을 보존하지 않아 비용을 산정할 수 없습니다."
+    },
+    {
+      "group": "initial_tests",
+      "file": "../openai_image2_api.png",
+      "reason": "CLI에서 토큰 사용량을 보존하지 않아 비용을 산정할 수 없습니다."
+    },
+    {
+      "group": "initial_tests",
+      "file": "../sunburst_newkey.png",
+      "reason": "CLI에서 토큰 사용량을 보존하지 않아 비용을 산정할 수 없습니다."
+    },
+    {
+      "group": "initial_tests",
+      "file": "../flare_newkey.png",
+      "reason": "CLI에서 토큰 사용량을 보존하지 않아 비용을 산정할 수 없습니다."
+    },
+    {
+      "group": "initial_tests",
+      "file": "../image2_newkey.png",
+      "reason": "CLI에서 토큰 사용량을 보존하지 않아 비용을 산정할 수 없습니다."
+    },
+    {
+      "group": "builtin_tools",
+      "file": "../codex_builtin.png",
+      "reason": "Codex 내장 생성·에이전트의 실제 과금 정보 미확인."
+    },
+    {
+      "group": "builtin_tools",
+      "file": "../agy_nano_banana_2.jpg",
+      "reason": "AGY 경유 이미지·에이전트의 실제 과금 정보 미확인."
+    },
+    {
+      "group": "development",
+      "file": null,
+      "reason": "프롬프트 조사·코드 작성·눈 검토를 수행한 개발 에이전트 비용 미확인. 로컬 OCR·정적 서버에는 외부 API 호출이 없습니다."
+    }
+  ],
+  "note": "공식 공개 단가 × 저장된 응답 사용량. 청구서 미대조, 세금·환율·크레딧·별도 계약 할인 제외. 확인할 수 없는 비용을 0원으로 간주하지 않습니다.",
+  "formulas": {
+    "openai": "text_input × $5/M + image_input × $8/M + image_output × $30/M",
+    "google": "promptTokenCount × input/M + IMAGE tokens × image_output/M + (candidatesTokenCount - IMAGE tokens + thoughtsTokenCount) × text_and_thinking_output/M"
+  }
+}

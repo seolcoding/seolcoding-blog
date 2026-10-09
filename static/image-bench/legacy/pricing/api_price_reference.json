@@ -1,0 +1,1066 @@
+{
+  "verified_date": "2026-10-09",
+  "verified_at_utc": "2026-10-09T07:46:47.297138+00:00",
+  "currency": "USD",
+  "billing_tier": "Standard",
+  "sources": [
+    {
+      "id": "openai_pricing",
+      "url": "https://developers.openai.com/api/docs/pricing#image-generation",
+      "title": "OpenAI API Pricing — Image generation models, Standard",
+      "local_snapshot": "openai_pricing_official.html",
+      "sha256": "3e2a04cd2bc1eee9ff8731e4018cb585fa77e0ca523423ddc257af60d815c11e"
+    },
+    {
+      "id": "openai_guide",
+      "url": "https://developers.openai.com/api/docs/guides/image-generation#cost-and-latency",
+      "title": "OpenAI Image generation — GPT Image 2 output tokens and size constraints",
+      "local_snapshot": "openai_image_generation_official.html",
+      "sha256": "8bf4b8b51312ac1a3bb01f97023378dcf1c276df3914c7d93703edc191460a72"
+    },
+    {
+      "id": "openai_calculator",
+      "url": "https://developers.openai.com/_astro/GptImageTokenCalculator.react.BA0pYYBT.js?dpl=dpl_7iHSYrJ5jPyHvJgcWEVxZrsjhkmE",
+      "title": "Official GPT Image token calculator JavaScript",
+      "local_snapshot": "openai_official_calculator.js",
+      "sha256": "3e8523c067cb199fc496cc81790113def372dbf66af165b8e9039fe747e48099"
+    },
+    {
+      "id": "openai_model",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+      "title": "GPT-Image-2 Model",
+      "local_snapshot": "openai_model_official.html",
+      "sha256": "d135eb2488a90924c046269c8367e9afb3a61f37eadfec5cde04716c2f6f5627"
+    },
+    {
+      "id": "google_pricing",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.1-flash-image",
+      "title": "Gemini Developer API pricing — Gemini 3.1 Flash Image Standard",
+      "local_snapshot": "google_pricing_official.html",
+      "sha256": "6e8e95de8a00dfbbcc1a1d06c6e76c379f3db10adff5bd282ccfdab62e9c48ec"
+    },
+    {
+      "id": "google_guide",
+      "url": "https://ai.google.dev/gemini-api/docs/image-generation#aspect_ratios",
+      "title": "Gemini Image generation — 3.1 Flash Image resolution/token table",
+      "local_snapshot": "google_image_generation_official.html",
+      "sha256": "b389bc04dfb8dd72fec19007509243668d4ae6d622656632f22632efb6cdeb29"
+    }
+  ],
+  "providers": {
+    "openai": {
+      "model": "gpt-image-2",
+      "rates_usd_per_million_tokens": {
+        "input_text": 5,
+        "cached_input_text": 1.25,
+        "input_image": 8,
+        "cached_input_image": 2,
+        "output_image": 30
+      },
+      "rate_evidence": "First (Standard) image pricing table Astro serialized props; hidden All models row for gpt-image-2. Second table is Batch and is excluded. See openai_pricing_table_props.json.",
+      "quality_axis": {
+        "low": 16,
+        "medium": 48,
+        "high": 96
+      },
+      "size_constraints": {
+        "edge_multiple": 16,
+        "min_pixels": 655360,
+        "max_pixels": 8294400,
+        "max_edge": 3840,
+        "max_aspect_ratio": 3
+      },
+      "official_standard_table_output_usd": {
+        "1024x1024": {
+          "low": 0.006,
+          "medium": 0.053,
+          "high": 0.211
+        },
+        "1024x1536": {
+          "low": 0.005,
+          "medium": 0.041,
+          "high": 0.165
+        },
+        "1536x1024": {
+          "low": 0.005,
+          "medium": 0.041,
+          "high": 0.165
+        }
+      },
+      "formula": "q = {low:16, medium:48, high:96}; short = round_half_to_even(q * min(width,height)/max(width,height)); tokens = ceil(q * short * (2000000 + width*height) / 4000000); cost = tokens * 30 / 1000000",
+      "cached_rate_note": "Cached inputs apply to Responses API image generation tool only; not direct Images API. No caching assumed here."
+    },
+    "google": {
+      "model": "gemini-3.1-flash-image",
+      "rates_usd_per_million_tokens": {
+        "input_text_image": 0.5,
+        "output_text_thinking": 3,
+        "output_image": 60
+      },
+      "output_tokens_by_tier": {
+        "0.5K": 747,
+        "1K": 1120,
+        "2K": 1680,
+        "4K": 2520
+      },
+      "aspect_ratio_dimensions_by_tier": {
+        "1:1": [
+          [
+            512,
+            512
+          ],
+          [
+            1024,
+            1024
+          ],
+          [
+            2048,
+            2048
+          ],
+          [
+            4096,
+            4096
+          ]
+        ],
+        "1:4": [
+          [
+            256,
+            1024
+          ],
+          [
+            512,
+            2048
+          ],
+          [
+            1024,
+            4096
+          ],
+          [
+            2048,
+            8192
+          ]
+        ],
+        "1:8": [
+          [
+            192,
+            1536
+          ],
+          [
+            384,
+            3072
+          ],
+          [
+            768,
+            6144
+          ],
+          [
+            1536,
+            12288
+          ]
+        ],
+        "2:3": [
+          [
+            424,
+            632
+          ],
+          [
+            848,
+            1264
+          ],
+          [
+            1696,
+            2528
+          ],
+          [
+            3392,
+            5056
+          ]
+        ],
+        "3:2": [
+          [
+            632,
+            424
+          ],
+          [
+            1264,
+            848
+          ],
+          [
+            2528,
+            1696
+          ],
+          [
+            5056,
+            3392
+          ]
+        ],
+        "3:4": [
+          [
+            448,
+            600
+          ],
+          [
+            896,
+            1200
+          ],
+          [
+            1792,
+            2400
+          ],
+          [
+            3584,
+            4800
+          ]
+        ],
+        "4:1": [
+          [
+            1024,
+            256
+          ],
+          [
+            2048,
+            512
+          ],
+          [
+            4096,
+            1024
+          ],
+          [
+            8192,
+            2048
+          ]
+        ],
+        "4:3": [
+          [
+            600,
+            448
+          ],
+          [
+            1200,
+            896
+          ],
+          [
+            2400,
+            1792
+          ],
+          [
+            4800,
+            3584
+          ]
+        ],
+        "4:5": [
+          [
+            464,
+            576
+          ],
+          [
+            928,
+            1152
+          ],
+          [
+            1856,
+            2304
+          ],
+          [
+            3712,
+            4608
+          ]
+        ],
+        "5:4": [
+          [
+            576,
+            464
+          ],
+          [
+            1152,
+            928
+          ],
+          [
+            2304,
+            1856
+          ],
+          [
+            4608,
+            3712
+          ]
+        ],
+        "8:1": [
+          [
+            1536,
+            192
+          ],
+          [
+            3072,
+            384
+          ],
+          [
+            6144,
+            768
+          ],
+          [
+            12288,
+            1536
+          ]
+        ],
+        "9:16": [
+          [
+            384,
+            688
+          ],
+          [
+            768,
+            1376
+          ],
+          [
+            1536,
+            2752
+          ],
+          [
+            3072,
+            5504
+          ]
+        ],
+        "16:9": [
+          [
+            688,
+            384
+          ],
+          [
+            1376,
+            768
+          ],
+          [
+            2752,
+            1536
+          ],
+          [
+            5504,
+            3072
+          ]
+        ],
+        "21:9": [
+          [
+            792,
+            168
+          ],
+          [
+            1584,
+            672
+          ],
+          [
+            3168,
+            1344
+          ],
+          [
+            6336,
+            2688
+          ]
+        ]
+      },
+      "formula": "image output cost = official resolution-tier tokens * 60 / 1000000",
+      "other_cost_note": "Text/image input, output text/thinking and grounding are additional; not included or fabricated."
+    }
+  },
+  "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+  "assumptions": [
+    "USD Standard API public rates verified on 2026-10-09; Batch excluded.",
+    "OpenAI estimator reproduces the official GPT Image 2 dynamic calculator formula, not GPT Image 1.5 token tables.",
+    "Unknown quality is auto unconfirmed; low/medium/high are hypothetical references, not identified tool settings.",
+    "Invalid OpenAI dimensions use adjacent valid 16px dimensions explicitly as references. Original files are never resized.",
+    "Unknown Google dimensions use a named official resolution as a reference only, never an actual tier claim.",
+    "No prompt, reference-image, hidden text/thinking, agent-model or grounding costs are added without observable tokens."
+  ],
+  "missing_fields": [
+    "Actual per-image model id when not returned by the built-in tool",
+    "Actual API image output tokens",
+    "Actual API input text and image tokens",
+    "Effective OpenAI quality and size request",
+    "Google effective resolution tier when not observed",
+    "Output text/thinking tokens and any grounding charges",
+    "Actual built-in tool billing"
+  ],
+  "prompt_token_estimation": {
+    "token_count": null,
+    "method": null,
+    "status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed."
+  },
+  "recalculated_at_utc": "2026-10-09T07:51:13.233189+00:00",
+  "resolution_quality_output_estimates": {
+    "openai": [
+      {
+        "reference_dimensions": [
+          1024,
+          1024
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 196,
+            "estimated_image_output_cost_usd": 0.00588
+          },
+          "medium": {
+            "estimated_output_tokens": 1756,
+            "estimated_image_output_cost_usd": 0.05268
+          },
+          "high": {
+            "estimated_output_tokens": 7024,
+            "estimated_image_output_cost_usd": 0.21072
+          }
+        }
+      },
+      {
+        "reference_dimensions": [
+          1024,
+          1536
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 158,
+            "estimated_image_output_cost_usd": 0.00474
+          },
+          "medium": {
+            "estimated_output_tokens": 1372,
+            "estimated_image_output_cost_usd": 0.04116
+          },
+          "high": {
+            "estimated_output_tokens": 5488,
+            "estimated_image_output_cost_usd": 0.16464
+          }
+        }
+      },
+      {
+        "reference_dimensions": [
+          1536,
+          1024
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 158,
+            "estimated_image_output_cost_usd": 0.00474
+          },
+          "medium": {
+            "estimated_output_tokens": 1372,
+            "estimated_image_output_cost_usd": 0.04116
+          },
+          "high": {
+            "estimated_output_tokens": 5488,
+            "estimated_image_output_cost_usd": 0.16464
+          }
+        }
+      },
+      {
+        "reference_dimensions": [
+          1664,
+          944
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 129,
+            "estimated_image_output_cost_usd": 0.00387
+          },
+          "medium": {
+            "estimated_output_tokens": 1157,
+            "estimated_image_output_cost_usd": 0.03471
+          },
+          "high": {
+            "estimated_output_tokens": 4628,
+            "estimated_image_output_cost_usd": 0.13884
+          }
+        }
+      },
+      {
+        "reference_dimensions": [
+          1680,
+          944
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 130,
+            "estimated_image_output_cost_usd": 0.0039
+          },
+          "medium": {
+            "estimated_output_tokens": 1162,
+            "estimated_image_output_cost_usd": 0.03486
+          },
+          "high": {
+            "estimated_output_tokens": 4648,
+            "estimated_image_output_cost_usd": 0.13944
+          }
+        }
+      },
+      {
+        "reference_dimensions": [
+          2048,
+          2048
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 397,
+            "estimated_image_output_cost_usd": 0.01191
+          },
+          "medium": {
+            "estimated_output_tokens": 3568,
+            "estimated_image_output_cost_usd": 0.10704
+          },
+          "high": {
+            "estimated_output_tokens": 14272,
+            "estimated_image_output_cost_usd": 0.42816
+          }
+        }
+      },
+      {
+        "reference_dimensions": [
+          2048,
+          1152
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 157,
+            "estimated_image_output_cost_usd": 0.00471
+          },
+          "medium": {
+            "estimated_output_tokens": 1413,
+            "estimated_image_output_cost_usd": 0.04239
+          },
+          "high": {
+            "estimated_output_tokens": 5650,
+            "estimated_image_output_cost_usd": 0.1695
+          }
+        }
+      },
+      {
+        "reference_dimensions": [
+          3840,
+          2160
+        ],
+        "output_estimates_by_quality": {
+          "low": {
+            "estimated_output_tokens": 371,
+            "estimated_image_output_cost_usd": 0.01113
+          },
+          "medium": {
+            "estimated_output_tokens": 3336,
+            "estimated_image_output_cost_usd": 0.10008
+          },
+          "high": {
+            "estimated_output_tokens": 13342,
+            "estimated_image_output_cost_usd": 0.40026
+          }
+        }
+      }
+    ],
+    "google": [
+      {
+        "reference_resolution_tier": "0.5K",
+        "official_tier_output_tokens": 747,
+        "estimated_image_output_cost_usd": 0.04482
+      },
+      {
+        "reference_resolution_tier": "1K",
+        "official_tier_output_tokens": 1120,
+        "estimated_image_output_cost_usd": 0.0672
+      },
+      {
+        "reference_resolution_tier": "2K",
+        "official_tier_output_tokens": 1680,
+        "estimated_image_output_cost_usd": 0.1008
+      },
+      {
+        "reference_resolution_tier": "4K",
+        "official_tier_output_tokens": 2520,
+        "estimated_image_output_cost_usd": 0.1512
+      }
+    ]
+  },
+  "per_record": [
+    {
+      "provider": "openai",
+      "scene_id": "05_menu",
+      "image_path": "05_menu.png",
+      "image_sha256": "3fe5321f10be249402c918c6ec52aaa4d7428c7844af5dca0267d2cd6968de6f",
+      "dimension_evidence": "Pillow",
+      "result_json_present": true,
+      "metadata_dimensions": [
+        1672,
+        941
+      ],
+      "requested_reference_model": "gpt-image-2",
+      "observed_image_model": null,
+      "model_status": "conditional_reference_model_estimate; tool model not verified",
+      "quality": null,
+      "quality_status": "auto unconfirmed / auto 미확인; Codex client request quality not supplied",
+      "actual_usage": null,
+      "actual_tool_cost_usd": null,
+      "record_reported_cost_usd_unvalidated": null,
+      "prompt_input_token_estimate": null,
+      "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+      "prompt_character_count": 1960,
+      "reference_image_evidence": {
+        "original_path": null,
+        "sha256": null,
+        "actually_passed": false
+      },
+      "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+      "missing_fields": [
+        "Actual per-image model id when not returned by the built-in tool",
+        "Actual API image output tokens",
+        "Actual API input text and image tokens",
+        "Effective OpenAI quality and size request",
+        "Google effective resolution tier when not observed",
+        "Output text/thinking tokens and any grounding charges",
+        "Actual built-in tool billing"
+      ],
+      "reference_input_tokens": null,
+      "input_cost_usd": null,
+      "total_api_cost_usd": null,
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "actual_size_api_valid": false,
+      "actual_size_validation_errors": [
+        "both edges must be multiples of 16"
+      ],
+      "reference_type": "adjacent_or_standard_valid_api_size_only",
+      "reference_dimensions": [
+        1664,
+        944
+      ],
+      "equally_near_reference_dimensions": [
+        [
+          1664,
+          944
+        ],
+        [
+          1680,
+          944
+        ]
+      ],
+      "output_estimates_by_quality": {
+        "low": {
+          "estimated_output_tokens": 129,
+          "estimated_image_output_cost_usd": 0.00387
+        },
+        "medium": {
+          "estimated_output_tokens": 1157,
+          "estimated_image_output_cost_usd": 0.03471
+        },
+        "high": {
+          "estimated_output_tokens": 4628,
+          "estimated_image_output_cost_usd": 0.13884
+        }
+      },
+      "display_price_text_ko": "GPT Image 2 조건부 API 출력 참고 $0.00387–$0.13884/장 · quality auto 미확인 · 1664×944 API 참고 크기"
+    },
+    {
+      "provider": "openai",
+      "scene_id": "06_document",
+      "image_path": "06_document.png",
+      "image_sha256": "0339fc974999f78c92ddd75ff5fcca0eaf2e9874ecd51d33402d4dfa1b84c2e0",
+      "dimension_evidence": "Pillow",
+      "result_json_present": true,
+      "metadata_dimensions": [
+        1024,
+        1536
+      ],
+      "requested_reference_model": "gpt-image-2",
+      "observed_image_model": null,
+      "model_status": "conditional_reference_model_estimate; tool model not verified",
+      "quality": null,
+      "quality_status": "auto unconfirmed / auto 미확인; Codex client request quality not supplied",
+      "actual_usage": null,
+      "actual_tool_cost_usd": null,
+      "record_reported_cost_usd_unvalidated": null,
+      "prompt_input_token_estimate": null,
+      "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+      "prompt_character_count": 2559,
+      "reference_image_evidence": {
+        "original_path": null,
+        "sha256": null,
+        "actually_passed": false
+      },
+      "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+      "missing_fields": [
+        "Actual per-image model id when not returned by the built-in tool",
+        "Actual API image output tokens",
+        "Actual API input text and image tokens",
+        "Effective OpenAI quality and size request",
+        "Google effective resolution tier when not observed",
+        "Output text/thinking tokens and any grounding charges",
+        "Actual built-in tool billing"
+      ],
+      "reference_input_tokens": null,
+      "input_cost_usd": null,
+      "total_api_cost_usd": null,
+      "actual_dimensions": [
+        1024,
+        1536
+      ],
+      "actual_size_api_valid": true,
+      "actual_size_validation_errors": [],
+      "reference_type": "same_dimensions_api_hypothesis",
+      "reference_dimensions": [
+        1024,
+        1536
+      ],
+      "equally_near_reference_dimensions": [
+        [
+          1024,
+          1536
+        ]
+      ],
+      "output_estimates_by_quality": {
+        "low": {
+          "estimated_output_tokens": 158,
+          "estimated_image_output_cost_usd": 0.00474
+        },
+        "medium": {
+          "estimated_output_tokens": 1372,
+          "estimated_image_output_cost_usd": 0.04116
+        },
+        "high": {
+          "estimated_output_tokens": 5488,
+          "estimated_image_output_cost_usd": 0.16464
+        }
+      },
+      "display_price_text_ko": "GPT Image 2 조건부 API 출력 참고 $0.00474–$0.16464/장 · quality auto 미확인 · 1024×1536 API 참고 크기"
+    },
+    {
+      "provider": "openai",
+      "scene_id": "09_comic",
+      "image_path": "09_comic.png",
+      "image_sha256": "922aae6ed06394675ffde53835db99a5e299dac0a135254eaffaec816bd921a0",
+      "dimension_evidence": "Pillow",
+      "result_json_present": true,
+      "metadata_dimensions": [
+        1672,
+        941
+      ],
+      "requested_reference_model": "gpt-image-2",
+      "observed_image_model": null,
+      "model_status": "conditional_reference_model_estimate; tool model not verified",
+      "quality": null,
+      "quality_status": "auto unconfirmed / auto 미확인; Codex client request quality not supplied",
+      "actual_usage": null,
+      "actual_tool_cost_usd": null,
+      "record_reported_cost_usd_unvalidated": null,
+      "prompt_input_token_estimate": null,
+      "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+      "prompt_character_count": 1534,
+      "reference_image_evidence": {
+        "original_path": "08_character_sunburst.png",
+        "sha256": "257df58d75c4ff635823fe187965f8c47328901459a89ed8436b4868d8c34418",
+        "actually_passed": true
+      },
+      "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+      "missing_fields": [
+        "Actual per-image model id when not returned by the built-in tool",
+        "Actual API image output tokens",
+        "Actual API input text and image tokens",
+        "Effective OpenAI quality and size request",
+        "Google effective resolution tier when not observed",
+        "Output text/thinking tokens and any grounding charges",
+        "Actual built-in tool billing"
+      ],
+      "reference_input_tokens": null,
+      "input_cost_usd": null,
+      "total_api_cost_usd": null,
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "actual_size_api_valid": false,
+      "actual_size_validation_errors": [
+        "both edges must be multiples of 16"
+      ],
+      "reference_type": "adjacent_or_standard_valid_api_size_only",
+      "reference_dimensions": [
+        1664,
+        944
+      ],
+      "equally_near_reference_dimensions": [
+        [
+          1664,
+          944
+        ],
+        [
+          1680,
+          944
+        ]
+      ],
+      "output_estimates_by_quality": {
+        "low": {
+          "estimated_output_tokens": 129,
+          "estimated_image_output_cost_usd": 0.00387
+        },
+        "medium": {
+          "estimated_output_tokens": 1157,
+          "estimated_image_output_cost_usd": 0.03471
+        },
+        "high": {
+          "estimated_output_tokens": 4628,
+          "estimated_image_output_cost_usd": 0.13884
+        }
+      },
+      "display_price_text_ko": "GPT Image 2 조건부 API 출력 참고 $0.00387–$0.13884/장 · quality auto 미확인 · 1664×944 API 참고 크기"
+    },
+    {
+      "provider": "google",
+      "scene_id": "05_menu",
+      "image_path": "05_menu.jpg",
+      "image_sha256": "e3cd7a639c4f2ad0b67ef8eb02385ab7595ebfa7db4e915b9f841a1eb1f411ed",
+      "dimension_evidence": "Pillow",
+      "result_json_present": true,
+      "metadata_dimensions": [
+        1376,
+        768
+      ],
+      "requested_reference_model": "gemini-3.1-flash-image",
+      "observed_image_model": "gemini-3.1-flash-image",
+      "model_status": "record model observed; verify evidence before billing",
+      "quality": null,
+      "quality_status": "OpenAI quality axis does not apply; Google resolution-tier request unconfirmed",
+      "actual_usage": null,
+      "actual_tool_cost_usd": null,
+      "record_reported_cost_usd_unvalidated": null,
+      "prompt_input_token_estimate": null,
+      "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+      "prompt_character_count": 1960,
+      "reference_image_evidence": {
+        "original_path": null,
+        "sha256": null,
+        "actually_passed": false
+      },
+      "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+      "missing_fields": [
+        "Actual per-image model id when not returned by the built-in tool",
+        "Actual API image output tokens",
+        "Actual API input text and image tokens",
+        "Effective OpenAI quality and size request",
+        "Google effective resolution tier when not observed",
+        "Output text/thinking tokens and any grounding charges",
+        "Actual built-in tool billing"
+      ],
+      "reference_input_tokens": null,
+      "input_cost_usd": null,
+      "total_api_cost_usd": null,
+      "actual_dimensions": [
+        1376,
+        768
+      ],
+      "actual_dimensions_match_official_table": true,
+      "reference_type": "official_table_size_match_api_hypothesis",
+      "reference_dimensions": [
+        1376,
+        768
+      ],
+      "reference_aspect_ratio": "16:9",
+      "estimate": {
+        "reference_resolution_tier": "1K",
+        "official_tier_output_tokens": 1120,
+        "estimated_image_output_cost_usd": 0.0672
+      },
+      "output_estimates_by_resolution_tier": {
+        "0.5K": {
+          "reference_resolution_tier": "0.5K",
+          "official_tier_output_tokens": 747,
+          "estimated_image_output_cost_usd": 0.04482
+        },
+        "1K": {
+          "reference_resolution_tier": "1K",
+          "official_tier_output_tokens": 1120,
+          "estimated_image_output_cost_usd": 0.0672
+        },
+        "2K": {
+          "reference_resolution_tier": "2K",
+          "official_tier_output_tokens": 1680,
+          "estimated_image_output_cost_usd": 0.1008
+        },
+        "4K": {
+          "reference_resolution_tier": "4K",
+          "official_tier_output_tokens": 2520,
+          "estimated_image_output_cost_usd": 0.1512
+        }
+      },
+      "resolution_tier_status": "actual request tier unconfirmed; file dimensions match reference table",
+      "inferred_reference_resolution_tier": "1K",
+      "actual_requested_resolution_tier": null,
+      "display_price_text_ko": "API 이미지 출력 참고: 1K $0.0672/장 · 실제 tier 미확인 · 0.5K–4K 참고 범위 $0.04482–$0.15120"
+    },
+    {
+      "provider": "google",
+      "scene_id": "06_document",
+      "image_path": "06_document.jpg",
+      "image_sha256": "68d32d2b2d4c513fa4c3d255dc0eebdf3a0f661d5f7348449aa7e776990a458d",
+      "dimension_evidence": "Pillow",
+      "result_json_present": true,
+      "metadata_dimensions": [
+        848,
+        1264
+      ],
+      "requested_reference_model": "gemini-3.1-flash-image",
+      "observed_image_model": "gemini-3.1-flash-image",
+      "model_status": "record model observed; verify evidence before billing",
+      "quality": null,
+      "quality_status": "OpenAI quality axis does not apply; Google resolution-tier request unconfirmed",
+      "actual_usage": null,
+      "actual_tool_cost_usd": null,
+      "record_reported_cost_usd_unvalidated": null,
+      "prompt_input_token_estimate": null,
+      "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+      "prompt_character_count": 2559,
+      "reference_image_evidence": {
+        "original_path": null,
+        "sha256": null,
+        "actually_passed": false
+      },
+      "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+      "missing_fields": [
+        "Actual per-image model id when not returned by the built-in tool",
+        "Actual API image output tokens",
+        "Actual API input text and image tokens",
+        "Effective OpenAI quality and size request",
+        "Google effective resolution tier when not observed",
+        "Output text/thinking tokens and any grounding charges",
+        "Actual built-in tool billing"
+      ],
+      "reference_input_tokens": null,
+      "input_cost_usd": null,
+      "total_api_cost_usd": null,
+      "actual_dimensions": [
+        848,
+        1264
+      ],
+      "actual_dimensions_match_official_table": true,
+      "reference_type": "official_table_size_match_api_hypothesis",
+      "reference_dimensions": [
+        848,
+        1264
+      ],
+      "reference_aspect_ratio": "2:3",
+      "estimate": {
+        "reference_resolution_tier": "1K",
+        "official_tier_output_tokens": 1120,
+        "estimated_image_output_cost_usd": 0.0672
+      },
+      "output_estimates_by_resolution_tier": {
+        "0.5K": {
+          "reference_resolution_tier": "0.5K",
+          "official_tier_output_tokens": 747,
+          "estimated_image_output_cost_usd": 0.04482
+        },
+        "1K": {
+          "reference_resolution_tier": "1K",
+          "official_tier_output_tokens": 1120,
+          "estimated_image_output_cost_usd": 0.0672
+        },
+        "2K": {
+          "reference_resolution_tier": "2K",
+          "official_tier_output_tokens": 1680,
+          "estimated_image_output_cost_usd": 0.1008
+        },
+        "4K": {
+          "reference_resolution_tier": "4K",
+          "official_tier_output_tokens": 2520,
+          "estimated_image_output_cost_usd": 0.1512
+        }
+      },
+      "resolution_tier_status": "actual request tier unconfirmed; file dimensions match reference table",
+      "inferred_reference_resolution_tier": "1K",
+      "actual_requested_resolution_tier": null,
+      "display_price_text_ko": "API 이미지 출력 참고: 1K $0.0672/장 · 실제 tier 미확인 · 0.5K–4K 참고 범위 $0.04482–$0.15120"
+    },
+    {
+      "provider": "google",
+      "scene_id": "09_comic",
+      "image_path": "09_comic.jpg",
+      "image_sha256": "504294bad4baaeace308e5a0f812394b92f1dd60519ade26d7d580c4c4cd74ec",
+      "dimension_evidence": "Pillow",
+      "result_json_present": true,
+      "metadata_dimensions": [
+        1376,
+        768
+      ],
+      "requested_reference_model": "gemini-3.1-flash-image",
+      "observed_image_model": "gemini-3.1-flash-image",
+      "model_status": "record model observed; verify evidence before billing",
+      "quality": null,
+      "quality_status": "OpenAI quality axis does not apply; Google resolution-tier request unconfirmed",
+      "actual_usage": null,
+      "actual_tool_cost_usd": null,
+      "record_reported_cost_usd_unvalidated": null,
+      "prompt_input_token_estimate": null,
+      "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+      "prompt_character_count": 1534,
+      "reference_image_evidence": {
+        "original_path": "08_character_sunburst.png",
+        "sha256": "257df58d75c4ff635823fe187965f8c47328901459a89ed8436b4868d8c34418",
+        "actually_passed": true
+      },
+      "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+      "missing_fields": [
+        "Actual per-image model id when not returned by the built-in tool",
+        "Actual API image output tokens",
+        "Actual API input text and image tokens",
+        "Effective OpenAI quality and size request",
+        "Google effective resolution tier when not observed",
+        "Output text/thinking tokens and any grounding charges",
+        "Actual built-in tool billing"
+      ],
+      "reference_input_tokens": null,
+      "input_cost_usd": null,
+      "total_api_cost_usd": null,
+      "actual_dimensions": [
+        1376,
+        768
+      ],
+      "actual_dimensions_match_official_table": true,
+      "reference_type": "official_table_size_match_api_hypothesis",
+      "reference_dimensions": [
+        1376,
+        768
+      ],
+      "reference_aspect_ratio": "16:9",
+      "estimate": {
+        "reference_resolution_tier": "1K",
+        "official_tier_output_tokens": 1120,
+        "estimated_image_output_cost_usd": 0.0672
+      },
+      "output_estimates_by_resolution_tier": {
+        "0.5K": {
+          "reference_resolution_tier": "0.5K",
+          "official_tier_output_tokens": 747,
+          "estimated_image_output_cost_usd": 0.04482
+        },
+        "1K": {
+          "reference_resolution_tier": "1K",
+          "official_tier_output_tokens": 1120,
+          "estimated_image_output_cost_usd": 0.0672
+        },
+        "2K": {
+          "reference_resolution_tier": "2K",
+          "official_tier_output_tokens": 1680,
+          "estimated_image_output_cost_usd": 0.1008
+        },
+        "4K": {
+          "reference_resolution_tier": "4K",
+          "official_tier_output_tokens": 2520,
+          "estimated_image_output_cost_usd": 0.1512
+        }
+      },
+      "resolution_tier_status": "actual request tier unconfirmed; file dimensions match reference table",
+      "inferred_reference_resolution_tier": "1K",
+      "actual_requested_resolution_tier": null,
+      "display_price_text_ko": "API 이미지 출력 참고: 1K $0.0672/장 · 실제 tier 미확인 · 0.5K–4K 참고 범위 $0.04482–$0.15120"
+    }
+  ],
+  "record_snapshot": {
+    "openai": {
+      "result_json_present": true,
+      "image_record_count": 3
+    },
+    "google": {
+      "result_json_present": true,
+      "image_record_count": 3
+    }
+  }
+}

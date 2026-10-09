@@ -1,0 +1,49 @@
+{
+  "id": "08_character_nano21",
+  "scene_id": "08_character",
+  "model_id": "nano21",
+  "requested_model": "gemini-nano-banana-2.1",
+  "requested_config": {
+    "size": "4K",
+    "aspect_ratio": "16:9"
+  },
+  "prompt": "[실무 목적]\n독립 출판사가 동화·만화·굿즈에 사용할 오리지널 토끼 캐릭터 ‘모리 / MORI’의 디자인 시트 한 장을 만든다. 기존 작품이나 작가의 스타일을 모방하지 않는다.\n[캐릭터 디자인 원문]\n모리는 크림색 털의 작은 토끼다. 긴 귀 두 개와 검은 타원 눈, 분홍색 작은 삼각 코, 노란 후드 우비, 초록 장화, 몸을 가로지르는 끈의 주황색 메신저 가방을 가진다. 손가락은 둥근 만화 형태다. 성별을 특정하지 않는다. 두 귀는 평소 세우며 우비 후드는 내린다. 옷과 몸의 비율은 모든 그림에서 동일하다.\n[시트 배치]\n16:9 가로형. 밝은 크림색 종이 바탕, 얇고 일정한 진한 갈색 선, 부드러운 파스텔 채색과 약한 종이 질감. 좌상단에는 ‘모리’, ‘MORI’, ‘CHARACTER DESIGN SHEET’ 세 줄의 제목만 넣는다. 제목 아래 3열×2행의 같은 크기 영역에 총 여섯 그림을 배치한다. 몸 전체가 잘리지 않고 장화와 가방이 보이며 일정한 기준선과 충분한 여백을 유지한다.\n위 행 왼쪽 ‘정면 / FRONT’: 카메라를 정면으로 보는 전신.\n위 행 가운데 ‘3/4 / THREE-QUARTER’: 왼쪽으로 45도 돌아선 전신.\n위 행 오른쪽 ‘측면 / SIDE’: 왼쪽을 보는 완전한 옆모습 전신.\n아래 행 왼쪽 ‘뒷면 / BACK’: 얼굴이 보이지 않는 완전한 뒷모습 전신. 가방과 끈도 몸의 회전에 맞게 보인다.\n아래 행 가운데 ‘기쁨 / HAPPY’: 같은 전신 비율로 웃으며 양팔을 작게 벌린 모습.\n아래 행 오른쪽 ‘호기심 / CURIOUS’: 같은 전신 비율로 고개를 기울이고 귀를 세운 모습.\n[제약]\n위에 지정한 한·영 라벨을 각 그림 바로 아래에 정확히 쓴다. 여섯 그림이 같은 토끼, 같은 노란 우비, 같은 초록 장화, 같은 주황 가방이어야 한다. 앞모습을 그대로 복사해 뒷면이라고 쓰지 않는다. 머리·귀·옷·소품 색과 상대 비율이 시점마다 바뀌지 않게 한다. 배경 장면, 대사, 다른 동물, 색상 견본 텍스트, 임의의 디자인 번호나 추가 라벨은 넣지 않는다. 선과 색이 깨끗해 캐릭터 작업의 기준 자료로 쓸 수 있어야 한다.",
+  "prompt_sha256": "1919a770487b27448d0d679150e42ca94e1ad7c9d9a8275bc39de7e29e69ae89",
+  "timestamp_utc": "2026-10-09T05:59:30.344579+00:00",
+  "status": "success",
+  "reference": null,
+  "instruction_language": "ko",
+  "elapsed_seconds": 49.866,
+  "response_model": "gemini-nano-banana-2.1",
+  "usage": {
+    "promptTokenCount": 601,
+    "candidatesTokenCount": 6078,
+    "totalTokenCount": 8524,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 601
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 3780
+      }
+    ],
+    "thoughtsTokenCount": 1845,
+    "serviceTier": "standard"
+  },
+  "response_id": "woLIavWHL6ex2roP17HquQE",
+  "path": "commercial/images/08_character_nano21.jpg",
+  "width": 5504,
+  "height": 3072,
+  "bytes": 6699681,
+  "sha256": "c6a025783978f7a5c68afbf729523620508c9d231d5f2cec26110b50f26f9c73",
+  "expected_dimensions": [
+    5504,
+    3072
+  ],
+  "resolution_verified": true,
+  "evidence_path": "commercial/evidence/08_character_nano21.json"
+}

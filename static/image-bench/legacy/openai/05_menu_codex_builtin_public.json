@@ -1,0 +1,127 @@
+{
+  "scene_id": "05_menu",
+  "status": "success",
+  "image_path": "05_menu.png",
+  "requested_prompt": "[납품 목적]\n가상 카페 브랜드 ‘모닝포스트 / MORNING POST’의 실제 매장 벽에 걸 수 있는 완성된 가로 메뉴판을 디자인한다. 사진 속 메뉴판이나 목업이 아니라 인쇄할 평면 디자인 한 장이다.\n[조판과 디자인]\n16:9. 따뜻한 크림색 바탕, 짙은 초록색 본문, 산호색 강조. 상단 12%는 브랜드와 제목. 그 아래 본문 3단은 COFFEE, TEA & SPECIAL, BAKERY 순서로 동일 너비를 가진다. 각 단은 메뉴 4개로, 한국어 이름을 굵게, 바로 아래 영어 이름, 우측 끝에 가격을 정렬한다. 항목마다 한국어 설명과 영어 설명을 작은 크기로 넣되 충분히 읽히게 한다. 하단 14%에 옵션·알레르기·부가세 안내를 담는다. 여백과 줄 간격을 확보하고 작은 글자까지 선명하게 표현한다.\n[반드시 그대로 들어갈 원문]\nCOFFEE / 커피\n\n아메리카노 / Americano / ₩3,500\n맑고 깔끔한 에스프레소 커피\nClean espresso with hot water\n\n카페라떼 / Caffè Latte / ₩4,500\n고소한 우유와 에스프레소\nEspresso with silky steamed milk\n\n바닐라 빈 라떼 / Vanilla Bean Latte / ₩5,200\n바닐라 빈의 은은한 단맛\nA gentle hint of real vanilla\n\n디카페인 콜드브루 / Decaf Cold Brew / ₩5,000\n천천히 우려낸 부드러운 커피\nSlow-steeped, smooth and mellow\n\nTEA & SPECIAL / 차와 특별한 음료\n\n제주 쑥 라떼 / Jeju Mugwort Latte / ₩5,800\n쑥의 향과 따뜻한 우유\nEarthy mugwort with warm milk\n\n딸기 말차 라떼 / Strawberry Matcha Latte / ₩6,200\n딸기와 말차의 두 가지 색\nStrawberry meets vibrant matcha\n\n얼그레이 밀크티 / Earl Grey Milk Tea / ₩5,500\n베르가모트 향의 홍차와 우유\nBergamot tea with creamy milk\n\n레몬 진저 티 / Lemon Ginger Tea / ₩4,800\n레몬과 생강의 산뜻한 조화\nBright lemon and warming ginger\n\nBAKERY / 베이커리\n\n버터 크루아상 / Butter Croissant / ₩3,800\n바삭한 겉과 촉촉한 결\nFlaky outside, tender inside\n\n크림치즈 꽈배기 / Cream Cheese Twist / ₩4,200\n쫄깃한 빵 속 부드러운 크림치즈\nA soft twist with cream cheese\n\n쑥 인절미 케이크 / Mugwort Injeolmi Cake / ₩6,500\n쑥과 고소한 콩가루\nMugwort cake with roasted soy flour\n\n레몬 파운드케이크 / Lemon Pound Cake / ₩4,500\n레몬 껍질의 향긋한 풍미\nA fragrant finish of lemon zest\n\nOAT MILK +₩700 / 오트밀크 변경 +700원\nEXTRA SHOT +₩500 / 샷 추가 +500원\nICED AVAILABLE / 아이스로도 주문할 수 있습니다.\n알레르기 안내: 우유, 밀, 대두가 포함된 메뉴가 있습니다.\nAllergen notice: Some items contain milk, wheat or soy.\n모든 가격은 부가세 포함입니다. / All prices include VAT.\n[삽화와 제약]\n브랜드 ‘모닝포스트’, ‘MORNING POST’, 제목 ‘SPRING MENU 2026’을 모두 넣는다. 본문을 가리지 않는 작은 파란 커피잔과 노란 튤립 선화만 허용한다. 총 메뉴는 정확히 12개다. 가격·쉼표·₩ 기호·Caffè의 악센트·한국어 받침을 바꾸지 않는다. 번역·축약·중복·추가 메뉴·임의 가격·로고·QR·워터마크는 넣지 않는다. 어려운 글자를 가짜 획으로 대체하지 않는다. 상업 디자인다운 위계와 깔끔한 조판을 구현한다.\n",
+  "actual_tool_prompt": null,
+  "prompt_sha256": "950d48ad09d0a938a18d582b298465f5983c1eb2f8bad95dd497ad4da2ae5cc4",
+  "actual_prompt_sha256": null,
+  "reference": {
+    "original_path": null,
+    "sha256": null,
+    "actually_passed": false
+  },
+  "image_model": null,
+  "model_evidence": {
+    "official_url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+    "official_model_id": "gpt-image-2",
+    "note": "Official ID verified; this does not identify the model of a built-in generation response.",
+    "response_evidence_file": "05_menu_response_evidence.json",
+    "session_evidence_file": "session_tool_evidence.json",
+    "observed_response_fields": [
+      "image_url",
+      "output_hint"
+    ],
+    "per_response_model_id_exposed": false
+  },
+  "agent_cli_version": "codex-cli 0.162.0",
+  "width": 1672,
+  "height": 941,
+  "sha256": "3fe5321f10be249402c918c6ec52aaa4d7428c7844af5dca0267d2cd6968de6f",
+  "elapsed_seconds": 34.938,
+  "usage": null,
+  "cost_usd": null,
+  "generation_route": "codex_builtin_image_gen",
+  "note": "Built-in tool does not expose size, quality, or model selection arguments. First successful output preserved byte-for-byte. Response exposes no image model ID, revised prompt, usage, or cost. Supplied tool argument exactly matches source UTF-8 bytes including final newline. Internal prompt rewriting is unobservable; identical downstream image-model prompts cannot be asserted. Elapsed time is measured tool wall time.",
+  "id": "05_menu_codex_builtin",
+  "model_id": "codex_builtin",
+  "path": "legacy/openai/05_menu.png",
+  "preview": "previews/05_menu_codex_builtin.webp",
+  "display_name": "Codex 내장 이미지 · 모델 미노출",
+  "company": "OpenAI",
+  "agent": "Codex",
+  "price_label": "GPT Image 2 API 참고 $0.0039–$0.1388",
+  "price_note": "GPT Image 2라고 가정한 API 이미지 출력분. 참고 크기 1664×944, low–high 품질. 입력·참조 비용 별도, 실제 Codex 모델·품질·요금 미확인.",
+  "api_price_reference": {
+    "provider": "openai",
+    "scene_id": "05_menu",
+    "image_path": "05_menu.png",
+    "image_sha256": "3fe5321f10be249402c918c6ec52aaa4d7428c7844af5dca0267d2cd6968de6f",
+    "dimension_evidence": "Pillow",
+    "result_json_present": true,
+    "metadata_dimensions": [
+      1672,
+      941
+    ],
+    "requested_reference_model": "gpt-image-2",
+    "observed_image_model": null,
+    "model_status": "conditional_reference_model_estimate; tool model not verified",
+    "quality": null,
+    "quality_status": "auto unconfirmed / auto 미확인; Codex client request quality not supplied",
+    "actual_usage": null,
+    "actual_tool_cost_usd": null,
+    "record_reported_cost_usd_unvalidated": null,
+    "prompt_input_token_estimate": null,
+    "prompt_token_estimation_status": "No matching offline tokenizer was used. tiktoken is not installed; Gemini tokenizer not available locally. No API countTokens call or installation performed.",
+    "prompt_character_count": 1960,
+    "reference_image_evidence": {
+      "original_path": null,
+      "sha256": null,
+      "actually_passed": false
+    },
+    "estimated_scope": "API image output only, conditional on requested reference model. Not actual built-in tool usage, total API cost, or tool billing.",
+    "missing_fields": [
+      "Actual per-image model id when not returned by the built-in tool",
+      "Actual API image output tokens",
+      "Actual API input text and image tokens",
+      "Effective OpenAI quality and size request",
+      "Google effective resolution tier when not observed",
+      "Output text/thinking tokens and any grounding charges",
+      "Actual built-in tool billing"
+    ],
+    "reference_input_tokens": null,
+    "input_cost_usd": null,
+    "total_api_cost_usd": null,
+    "actual_dimensions": [
+      1672,
+      941
+    ],
+    "actual_size_api_valid": false,
+    "actual_size_validation_errors": [
+      "both edges must be multiples of 16"
+    ],
+    "reference_type": "adjacent_or_standard_valid_api_size_only",
+    "reference_dimensions": [
+      1664,
+      944
+    ],
+    "equally_near_reference_dimensions": [
+      [
+        1664,
+        944
+      ],
+      [
+        1680,
+        944
+      ]
+    ],
+    "output_estimates_by_quality": {
+      "low": {
+        "estimated_output_tokens": 129,
+        "estimated_image_output_cost_usd": 0.00387
+      },
+      "medium": {
+        "estimated_output_tokens": 1157,
+        "estimated_image_output_cost_usd": 0.03471
+      },
+      "high": {
+        "estimated_output_tokens": 4628,
+        "estimated_image_output_cost_usd": 0.13884
+      }
+    },
+    "display_price_text_ko": "GPT Image 2 조건부 API 출력 참고 $0.00387–$0.13884/장 · quality auto 미확인 · 1664×944 API 참고 크기"
+  },
+  "comparison_note": "최신 API와 도구·해상도·품질이 다릅니다. 생성 모델 ID는 Codex 응답에서 노출되지 않아 GPT Image 2로 확정하지 않았습니다.",
+  "review_note": "12개 메뉴를 3단에 배치했습니다. 원문에 없는 영문 슬로건과 장식을 추가했습니다.",
+  "evidence_path": "legacy/openai/05_menu_codex_builtin_public.json"
+}

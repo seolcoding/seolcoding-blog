@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>새로 나온 나노바나나 2.1, 얼마나 좋을까요? 이미지·가격·실무 사례 비교 · 설코딩</title>
+<meta property="og:title" content="새로 나온 나노바나나 2.1, 얼마나 좋을까요? 이미지·가격·실무 사례 비교 · 설코딩"><meta property="og:description" content="새로 나온 나노바나나 2.1, 얼마나 좋을까요? OpenAI GPT Image 2.5 Flare·Sunburst와 10개 과제·30장으로 비교했습니다. 이미지·프롬프트·가격·검토를 한눈에 확인하세요."><meta property="og:type" content="website"><meta property="og:url" content="https://blog.seolcoding.com/image-bench/"><meta property="og:image" content="https://blog.seolcoding.com/image-bench/share/og.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="새로 나온 나노바나나 2.1, 얼마나 좋을까요? OpenAI GPT Image 2.5 Flare·Sunburst와 10개 과제·30장으로 비교했습니다. 이미지·프롬프트·가격·검토를 한눈에 확인하세요.">
+<script>try{const t=localStorage.getItem('seolcoding-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="icon" href="brand/logos/L2-favicon.svg" type="image/svg+xml">
+<link rel="preload" href="brand/fonts/Pretendard-Bold.subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="brand/ui.css"><link rel="stylesheet" href="brand/theme-web.css"><link rel="stylesheet" href="brand/components.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#comparison">이미지 비교로 이동</a>
+<div class="page">
+<header class="site-header"><a class="logo" href="https://blog.seolcoding.com" aria-label="설코딩 블로그"><img class="sc-logo-light" src="brand/logos/L2-horizontal.svg" alt="SEOLCODING"><img class="sc-logo-dark" src="brand/logos/L2-horizontal-dark.svg" alt="SEOLCODING"></a><div class="header-right"><a href="#details">검토·가격 근거</a><div id="theme-control"></div></div></header>
+<main>
+<section class="hero" aria-labelledby="page-title"><h1 id="page-title">나노바나나 2.1,<br><span class="sc-mark">얼마나 좋을까요?</span></h1><div class="hero-note"><p>새로 나온 나노바나나 2.1.<br>이미지·가격·다양한 실무 사례로<br>대신 비교해드렸습니다.</p><p class="muted">OpenAI GPT Image 2.5 Flare·Sunburst와 같은 프롬프트로 비교했습니다.<br>이번 10과제의 평균 생성비는 OpenAI 두 모델보다 약 <strong id="saving">67%</strong> 낮았습니다.</p><small>2026.10.09 · 실제 API 원본 30장 · 과제별 1회 생성</small></div></section>
+<section id="comparison" aria-labelledby="scene-title">
+<div class="case-picker"><div id="scene-controls"></div></div>
+<div class="scene-intro"><div><h2 id="scene-title"></h2><p id="scene-question"></p></div><div id="view-controls"></div></div>
+<p class="recommendation" id="recommendation" aria-live="polite"></p>
+<div class="comparison-grid" id="images"></div>
+<p class="fine-print" id="view-hint">가격은 이 이미지의 실제 API 사용량으로 산정했습니다. 원본 100%에서 같은 위치를 확대해 비교할 수 있습니다.</p>
+<details id="legacy-section" class="legacy-section" hidden><summary>이전 모델·내장 도구와 비교</summary><p class="fine-print">Codex·AGY 내장 이미지 도구의 실제 생성 결과입니다. 요청 원문은 같아도 도구의 프롬프트 처리·해상도·품질이 다를 수 있습니다. 공식 API 가격으로 계산한 이미지 출력분 참고액을 함께 표시합니다. 실제 구독 청구액은 미확인입니다.</p><div id="legacy-images" class="legacy-grid"></div></details>
+<section class="prompt-section" aria-labelledby="prompt-heading"><div class="section-heading"><h2 id="prompt-heading">어떤 프롬프트를 썼나</h2><div id="copy-control"></div></div><p id="prompt-summary"></p><details id="prompt-details"><summary>세 모델에 보낸 원문 전체 보기</summary><pre id="prompt-text"></pre><p><a id="prompt-link" download>프롬프트 내려받기</a></p><div id="reference-info" hidden></div></details><output class="status" id="copy-status" aria-live="polite"></output></section>
+</section>
+<section class="choice-section" aria-labelledby="choice-heading"><h2 id="choice-heading">가성비로 고른다면</h2><div class="choice-rows" id="choices"></div><p class="fine-print">장당 가격은 이번 10과제의 평균입니다. 아래 추천은 이 사례의 검토 의견이며, 모델 전체의 순위는 아닙니다.</p></section>
+<details class="advanced" id="details"><summary>검토·가격 근거 더 보기 <span>원본 검토 / 내 기록 / 비용 / 벤치 방법</span></summary><div class="advanced-content">
+<details id="reviews-section"><summary>이 과제의 상세 검토와 내 메모</summary><p>작성자(AI)가 원본을 확인한 관찰입니다. 체크 개수는 공식 벤치 점수가 아닙니다. OCR 미발견은 오탈자 확정이 아닙니다.</p><div class="review-tools"><button id="export" type="button">내 검토 내보내기</button><button id="import-button" type="button">검토 가져오기</button><input id="import-file" type="file" accept="application/json" hidden></div><div id="reviews"></div><div class="vote-area"><p>이미지를 직접 보고 더 마음에 드는 모델을 골라 주세요.</p><div id="votes"></div><output id="review-status" aria-live="polite"></output></div></details>
+<details id="cost-section"><summary>모델의 정확한 이름과 이미지당 가격·총비용</summary><div id="cost-content"></div><p><a href="costs.json" download>비용 계산 JSON</a> · <a href="cost_report.md">산식과 포함 범위</a></p></details>
+<details id="method-section"><summary>다른 사람들은 어떻게 벤치했나</summary><p>긴 글자와 여러 시점의 이야기를 평가한 공개 벤치를 검토하고, 메뉴 → 문서 → 패키지 → 캐릭터 → 코믹 → 동화의 여섯 제작 과제로 옮겼습니다.</p><div id="sources"></div><h3>비교 조건</h3><ul class="conditions"><li>과제마다 같은 원문으로 각 모델의 최초 응답 1장씩 비교했습니다. 다시 생성해 좋은 결과를 고르지 않았습니다.</li><li>OpenAI는 max 품질, Google은 4K 설정입니다. 모델별 원본 크기·형식이 달라 같은 해상도나 계산량을 통제한 실험은 아닙니다.</li><li>코믹·동화에는 Sunburst의 첫 캐릭터 시트를 세 모델 모두에 참조로 보냈습니다. 참조의 출처가 결과에 영향을 줄 수 있습니다.</li><li>한글 받침·숫자·가격 대응은 눈 검토와 OCR 원문 대조를 함께 사용했습니다. OCR에서 못 찾은 글자를 자동 실패로 판정하지 않았습니다.</li><li>상업 납품 전에는 문구 교정과 인쇄 조판이 필요합니다. 단일 생성으로 반복 안정성이나 모델 전체의 우열을 결론 내릴 수 없습니다.</li></ul><p><a href="manifest.json" download>프롬프트·모델·검토·사용량 기록</a></p></details>
+<details id="story-section"><summary>모션그래픽으로 옮길 스토리라인</summary><p>여섯 제작 과제, 장면당 8초. 프롬프트 → 세 이미지 → 차이와 가격 → 용도별 선택 순서로 비교합니다. 영상은 아직 렌더하지 않았습니다.</p><div id="storyboard"></div><a href="commercial/motion_manifest.json" download>48초 스토리보드 JSON</a></details>
+</div></details>
+<p class="project-cost">이번 벤치 30장 생성비 <strong id="total-cost">$9.60</strong><span>사용량 기준 산정 · 전체 제작비와 최종 청구액은 상세에서 확인</span></p>
+</main>
+<footer><span>SEOLCODING · 이미지 모델 비교 · <a href="share/article/">실험 이야기 읽기</a> · <a href="share/">카톡·LinkedIn 공유 자료</a></span><a href="#page-title">처음으로 ↑</a></footer>
+</div>
+<div id="image-viewer"></div>
+<script src="data.js"></script><script src="ui-controls.js"></script><script src="app.js"></script>
+</body></html>

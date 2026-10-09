@@ -1,0 +1,36 @@
+{
+  "id": "04_hands_sunburst",
+  "scene_id": "04_hands",
+  "model_id": "sunburst",
+  "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+  "requested_config": {
+    "size": "3840x2160",
+    "quality": "max"
+  },
+  "prompt": "동네 카페에서 바리스타가 첫 커피를 따르는 순간을 손과 도구 중심의 실제 사진처럼 그려 주세요. 왼손은 파란 머그컵의 손잡이를 잡고 오른손은 은색 주전자를 잡으며, 주전자 입구에서 나온 커피 줄기가 컵 안으로 이어지게 해 주세요. 따뜻한 아침 빛의 가로 화면이며 얼굴과 글자는 넣지 마세요.",
+  "prompt_sha256": "a3b0d8551a82b3b371a5b97c82656417d30b02b48a64657bf31e26336e853cad",
+  "timestamp_utc": "2026-10-09T05:35:38.270134+00:00",
+  "status": "success",
+  "elapsed_seconds": 91.598,
+  "response_model": null,
+  "usage": {
+    "input_tokens": 103,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 103
+    },
+    "output_tokens": 13342,
+    "output_tokens_details": {
+      "image_tokens": 13342,
+      "text_tokens": 0
+    },
+    "total_tokens": 13445
+  },
+  "path": "images/04_hands_sunburst.png",
+  "width": 3840,
+  "height": 2160,
+  "bytes": 9681231,
+  "sha256": "f0b493f224adbc66e3b6db71289f37136c7fb7fa715b4c974dc65a90454bbd63",
+  "resolution_verified": true,
+  "evidence_path": "evidence/04_hands_sunburst.json"
+}

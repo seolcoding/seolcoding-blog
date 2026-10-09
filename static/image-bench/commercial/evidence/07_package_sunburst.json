@@ -1,0 +1,42 @@
+{
+  "id": "07_package_sunburst",
+  "scene_id": "07_package",
+  "model_id": "sunburst",
+  "requested_model": "gpt-image-2.5-sunburst-2026-09-08",
+  "requested_config": {
+    "size": "3840x2160",
+    "quality": "max"
+  },
+  "prompt": "[Commercial deliverable]\nCreate a professional 16:9 presentation board for a fictional MORNING POST drip-coffee box. Left 36%: a large flat front artwork. Middle 36%: a large flat back artwork. Right 28%: one assembled box in a clean three-quarter product view, showing the front and right side. Use an ivory board, generous margins and thin dividers. This is a design proposal board, not a pile of products.\n[Visual system]\nCream carton, forest-green type, coral sun emblem, subtle yellow-tulip line art. Front and assembled view must share identical typography, colors and front copy. Small text on the large flat back must be genuinely legible. Keep front, back and 3D views clearly separated. No barcode, invented compliance badge or extra logos.\n[Exact FRONT copy]\n모닝포스트\nMORNING POST\n봄날의 드립백\nSPRING DRIP COFFEE\nETHIOPIA BLEND\n5 BAGS × 10 g\nNET WT. 50 g\nTASTING NOTES: APRICOT · COCOA · FLORAL\n향미: 살구 · 코코아 · 꽃향기\n[Exact BACK copy]\n원재료명: 커피 100%\nIngredients: 100% roasted coffee.\n01 뜯기 / OPEN\n02 걸기 / HANG\n03 붓기 / POUR\n컵에 걸고 90–94°C 물 150 mL를 천천히 부어 주세요.\nHang on a cup and slowly pour 150 mL of water at 90–94°C.\n직사광선을 피하고 서늘한 곳에 보관하세요.\nStore in a cool place away from direct sunlight.\nBEST BEFORE 2027.04.30\nBATCH MP-0410\n[Constraints]\nPreserve Korean glyphs, English spelling, the × multiplication sign, the middle dots, en dash, °C, mL and decimal date. Do not translate, summarize or substitute text. Illustrate the three brewing steps with small, clear cup-and-dripbag diagrams next to the respective bilingual step. Do not invent nutrition data, manufacturing information or additional claims. The three-quarter box is a visual consistency test, so it must not become a different brand or flavor.",
+  "prompt_sha256": "755d3f3a3f664a6cfd72a4bbbb29110e644a736d0b8e71afc872bb920bf046f5",
+  "timestamp_utc": "2026-10-09T06:04:28.919043+00:00",
+  "status": "success",
+  "reference": null,
+  "instruction_language": "en",
+  "elapsed_seconds": 84.374,
+  "response_model": null,
+  "usage": {
+    "input_tokens": 483,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 483
+    },
+    "output_tokens": 13342,
+    "output_tokens_details": {
+      "image_tokens": 13342,
+      "text_tokens": 0
+    },
+    "total_tokens": 13825
+  },
+  "path": "commercial/images/07_package_sunburst.png",
+  "width": 3840,
+  "height": 2160,
+  "bytes": 9455570,
+  "sha256": "40e3ffaac4f12476818b56e8a4824eb7e92df239064e043b8bf28cd2954c0986",
+  "expected_dimensions": [
+    3840,
+    2160
+  ],
+  "resolution_verified": true,
+  "evidence_path": "commercial/evidence/07_package_sunburst.json"
+}

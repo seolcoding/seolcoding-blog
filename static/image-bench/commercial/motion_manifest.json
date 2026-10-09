@@ -1,0 +1,224 @@
+{
+  "title": "상업 이미지 벤치",
+  "asset_base": "./",
+  "format": {
+    "width": 3840,
+    "height": 2160,
+    "fps": 30
+  },
+  "duration_seconds": 48,
+  "render_status": "not_rendered",
+  "note": "이미지 원본·검토·자막을 비교 영상으로 옮길 재료. 영상은 아직 렌더하지 않았습니다.",
+  "scenes": [
+    {
+      "id": "05_menu",
+      "title": "05 · 한·영 메뉴판",
+      "start_seconds": 0,
+      "duration_seconds": 8,
+      "narration": "손님이 실제로 주문할 메뉴판에서 이름과 가격을 끝까지 맞출 수 있을까?",
+      "caption": "손님이 실제로 주문할 메뉴판에서 이름과 가격을 끝까지 맞출 수 있을까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "commercial/images/05_menu_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/05_menu_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "commercial/images/05_menu_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "commercial/evidence/05_menu_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "commercial/images/05_menu_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/05_menu_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "07_package",
+      "title": "07 · 제품 패키지",
+      "start_seconds": 8,
+      "duration_seconds": 8,
+      "narration": "패키지의 작은 정보와 입체 모습이 서로 일치할까?",
+      "caption": "패키지의 작은 정보와 입체 모습이 서로 일치할까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "commercial/images/07_package_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/07_package_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "commercial/images/07_package_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "commercial/evidence/07_package_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "commercial/images/07_package_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/07_package_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "06_document",
+      "title": "06 · 제안·견적 문서",
+      "start_seconds": 16,
+      "duration_seconds": 8,
+      "narration": "긴 본문과 비용 표가 있는 문서도 그대로 고객에게 보여줄 수 있을까?",
+      "caption": "긴 본문과 비용 표가 있는 문서도 그대로 고객에게 보여줄 수 있을까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "commercial/images/06_document_flare.png",
+          "width": 2336,
+          "height": 3504,
+          "evidence": "commercial/evidence/06_document_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "commercial/images/06_document_nano21.jpg",
+          "width": 3392,
+          "height": 5056,
+          "evidence": "commercial/evidence/06_document_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "commercial/images/06_document_sunburst.png",
+          "width": 2336,
+          "height": 3504,
+          "evidence": "commercial/evidence/06_document_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "08_character",
+      "title": "08 · 캐릭터 시트",
+      "start_seconds": 24,
+      "duration_seconds": 8,
+      "narration": "캐릭터 하나를 여러 방향에서 그려도 같은 디자인으로 유지할까?",
+      "caption": "캐릭터 하나를 여러 방향에서 그려도 같은 디자인으로 유지할까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "commercial/images/08_character_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/08_character_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "commercial/images/08_character_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "commercial/evidence/08_character_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "commercial/images/08_character_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/08_character_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "09_comic",
+      "title": "09 · 6컷 코믹",
+      "start_seconds": 32,
+      "duration_seconds": 8,
+      "narration": "여섯 컷을 읽으면 사건이 이어지고 대사가 올바른 캐릭터에게 붙을까?",
+      "caption": "여섯 컷을 읽으면 사건이 이어지고 대사가 올바른 캐릭터에게 붙을까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "commercial/images/09_comic_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/09_comic_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "commercial/images/09_comic_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "commercial/evidence/09_comic_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "commercial/images/09_comic_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/09_comic_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "10_storybook",
+      "title": "10 · 동화 펼침면",
+      "start_seconds": 40,
+      "duration_seconds": 8,
+      "narration": "동화의 두 페이지에서 긴 한·영 문장과 그림을 함께 읽을 수 있을까?",
+      "caption": "동화의 두 페이지에서 긴 한·영 문장과 그림을 함께 읽을 수 있을까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "commercial/images/10_storybook_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/10_storybook_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "commercial/images/10_storybook_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "commercial/evidence/10_storybook_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "commercial/images/10_storybook_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "commercial/evidence/10_storybook_sunburst.json"
+        }
+      ]
+    }
+  ]
+}

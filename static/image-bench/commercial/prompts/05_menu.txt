@@ -1,0 +1,67 @@
+[납품 목적]
+가상 카페 브랜드 ‘모닝포스트 / MORNING POST’의 실제 매장 벽에 걸 수 있는 완성된 가로 메뉴판을 디자인한다. 사진 속 메뉴판이나 목업이 아니라 인쇄할 평면 디자인 한 장이다.
+[조판과 디자인]
+16:9. 따뜻한 크림색 바탕, 짙은 초록색 본문, 산호색 강조. 상단 12%는 브랜드와 제목. 그 아래 본문 3단은 COFFEE, TEA & SPECIAL, BAKERY 순서로 동일 너비를 가진다. 각 단은 메뉴 4개로, 한국어 이름을 굵게, 바로 아래 영어 이름, 우측 끝에 가격을 정렬한다. 항목마다 한국어 설명과 영어 설명을 작은 크기로 넣되 충분히 읽히게 한다. 하단 14%에 옵션·알레르기·부가세 안내를 담는다. 여백과 줄 간격을 확보하고 작은 글자까지 선명하게 표현한다.
+[반드시 그대로 들어갈 원문]
+COFFEE / 커피
+
+아메리카노 / Americano / ₩3,500
+맑고 깔끔한 에스프레소 커피
+Clean espresso with hot water
+
+카페라떼 / Caffè Latte / ₩4,500
+고소한 우유와 에스프레소
+Espresso with silky steamed milk
+
+바닐라 빈 라떼 / Vanilla Bean Latte / ₩5,200
+바닐라 빈의 은은한 단맛
+A gentle hint of real vanilla
+
+디카페인 콜드브루 / Decaf Cold Brew / ₩5,000
+천천히 우려낸 부드러운 커피
+Slow-steeped, smooth and mellow
+
+TEA & SPECIAL / 차와 특별한 음료
+
+제주 쑥 라떼 / Jeju Mugwort Latte / ₩5,800
+쑥의 향과 따뜻한 우유
+Earthy mugwort with warm milk
+
+딸기 말차 라떼 / Strawberry Matcha Latte / ₩6,200
+딸기와 말차의 두 가지 색
+Strawberry meets vibrant matcha
+
+얼그레이 밀크티 / Earl Grey Milk Tea / ₩5,500
+베르가모트 향의 홍차와 우유
+Bergamot tea with creamy milk
+
+레몬 진저 티 / Lemon Ginger Tea / ₩4,800
+레몬과 생강의 산뜻한 조화
+Bright lemon and warming ginger
+
+BAKERY / 베이커리
+
+버터 크루아상 / Butter Croissant / ₩3,800
+바삭한 겉과 촉촉한 결
+Flaky outside, tender inside
+
+크림치즈 꽈배기 / Cream Cheese Twist / ₩4,200
+쫄깃한 빵 속 부드러운 크림치즈
+A soft twist with cream cheese
+
+쑥 인절미 케이크 / Mugwort Injeolmi Cake / ₩6,500
+쑥과 고소한 콩가루
+Mugwort cake with roasted soy flour
+
+레몬 파운드케이크 / Lemon Pound Cake / ₩4,500
+레몬 껍질의 향긋한 풍미
+A fragrant finish of lemon zest
+
+OAT MILK +₩700 / 오트밀크 변경 +700원
+EXTRA SHOT +₩500 / 샷 추가 +500원
+ICED AVAILABLE / 아이스로도 주문할 수 있습니다.
+알레르기 안내: 우유, 밀, 대두가 포함된 메뉴가 있습니다.
+Allergen notice: Some items contain milk, wheat or soy.
+모든 가격은 부가세 포함입니다. / All prices include VAT.
+[삽화와 제약]
+브랜드 ‘모닝포스트’, ‘MORNING POST’, 제목 ‘SPRING MENU 2026’을 모두 넣는다. 본문을 가리지 않는 작은 파란 커피잔과 노란 튤립 선화만 허용한다. 총 메뉴는 정확히 12개다. 가격·쉼표·₩ 기호·Caffè의 악센트·한국어 받침을 바꾸지 않는다. 번역·축약·중복·추가 메뉴·임의 가격·로고·QR·워터마크는 넣지 않는다. 어려운 글자를 가짜 획으로 대체하지 않는다. 상업 디자인다운 위계와 깔끔한 조판을 구현한다.

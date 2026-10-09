@@ -1,0 +1,43 @@
+{
+  "id": "01_light_nano21",
+  "scene_id": "01_light",
+  "model_id": "nano21",
+  "requested_model": "gemini-nano-banana-2.1",
+  "requested_config": {
+    "size": "4K",
+    "aspect_ratio": "16:9"
+  },
+  "prompt": "봄 아침의 동네 카페를 배경으로, 나무 테이블 위에 물이 반쯤 든 투명 유리잔 하나와 접시에 놓인 크루아상 하나를 실제 사진처럼 그려 주세요. 왼쪽 창문에서 들어온 햇빛이 오른쪽으로 그림자를 만들고, 유리 너머의 나뭇결과 크루아상의 얇은 결이 보이게 해 주세요. 가로 화면이며 사람과 글자는 넣지 마세요.",
+  "prompt_sha256": "c9eafb0876dcba7f04a6b3e190025f4d05543136d4c987ea2b5e97030ae8c392",
+  "timestamp_utc": "2026-10-09T05:31:26.289379+00:00",
+  "status": "success",
+  "elapsed_seconds": 37.702,
+  "response_model": "gemini-nano-banana-2.1",
+  "usage": {
+    "promptTokenCount": 93,
+    "candidatesTokenCount": 4270,
+    "totalTokenCount": 5391,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 93
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 3780
+      }
+    ],
+    "thoughtsTokenCount": 1028,
+    "serviceTier": "standard"
+  },
+  "response_id": "LnzIav-HKvqB2roP9PHqwAY",
+  "path": "images/01_light_nano21.jpg",
+  "width": 5504,
+  "height": 3072,
+  "bytes": 8653788,
+  "sha256": "1a68015e1584864fc835c48b042b8427ff719fce429d0d7f4e28901b1fde66ea",
+  "resolution_verified": true,
+  "evidence_path": "evidence/01_light_nano21.json"
+}

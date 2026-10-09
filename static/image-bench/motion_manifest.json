@@ -1,0 +1,154 @@
+{
+  "title": "봄날의 카페 — 고해상도 이미지 벤치",
+  "asset_base": "./",
+  "format": {
+    "width": 3840,
+    "height": 2160,
+    "fps": 30
+  },
+  "duration_seconds": 24,
+  "render_status": "not_rendered",
+  "note": "이미지 원본·검토·자막을 비교 영상으로 옮길 재료. 영상은 아직 렌더하지 않았습니다.",
+  "scenes": [
+    {
+      "id": "01_light",
+      "title": "01 · 아침 햇살",
+      "start_seconds": 0,
+      "duration_seconds": 6,
+      "narration": "첫 번째는 아침 햇살입니다. 해상도 숫자보다 유리와 빵의 디테일을 보세요.",
+      "caption": "사진처럼 보여도 유리와 그림자는 자연스러울까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.63
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "images/01_light_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/01_light_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "images/01_light_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "evidence/01_light_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "images/01_light_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/01_light_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "02_objects",
+      "title": "02 · 테이블 준비",
+      "start_seconds": 6,
+      "duration_seconds": 6,
+      "narration": "다음은 테이블 준비. 컵 세 개와 튤립 다섯 송이가 약속한 자리에 있을까요?",
+      "caption": "컵 세 개, 꽃 다섯 송이. 말한 대로 놓았을까?",
+      "detail_focus": {
+        "x": 0.5,
+        "y": 0.38
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "images/02_objects_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/02_objects_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "images/02_objects_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "evidence/02_objects_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "images/02_objects_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/02_objects_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "04_hands",
+      "title": "04 · 첫 잔을 따르다",
+      "start_seconds": 12,
+      "duration_seconds": 6,
+      "narration": "마지막은 첫 잔. 손이 도구를 잡는 모습과 커피 줄기의 연결을 살펴봅니다.",
+      "caption": "손, 주전자, 커피 줄기가 제대로 이어질까?",
+      "detail_focus": {
+        "x": 0.52,
+        "y": 0.55
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "images/04_hands_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/04_hands_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "images/04_hands_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "evidence/04_hands_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "images/04_hands_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/04_hands_sunburst.json"
+        }
+      ]
+    },
+    {
+      "id": "03_poster",
+      "title": "03 · 봄맞이 포스터",
+      "start_seconds": 18,
+      "duration_seconds": 6,
+      "narration": "세 번째는 손님에게 보여줄 포스터. 분위기와 별개로 한글과 가격을 한 글자씩 확인합니다.",
+      "caption": "예쁜 포스터에서 글자도 정확히 읽힐까?",
+      "detail_focus": {
+        "x": 0.42,
+        "y": 0.48
+      },
+      "variants": [
+        {
+          "model_id": "flare",
+          "asset": "images/03_poster_flare.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/03_poster_flare.json"
+        },
+        {
+          "model_id": "nano21",
+          "asset": "images/03_poster_nano21.jpg",
+          "width": 5504,
+          "height": 3072,
+          "evidence": "evidence/03_poster_nano21.json"
+        },
+        {
+          "model_id": "sunburst",
+          "asset": "images/03_poster_sunburst.png",
+          "width": 3840,
+          "height": 2160,
+          "evidence": "evidence/03_poster_sunburst.json"
+        }
+      ]
+    }
+  ]
+}

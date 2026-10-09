@@ -1,0 +1,42 @@
+{
+  "id": "06_document_flare",
+  "scene_id": "06_document",
+  "model_id": "flare",
+  "requested_model": "gpt-image-2.5-flare-2026-09-08",
+  "requested_config": {
+    "size": "2336x3504",
+    "quality": "max"
+  },
+  "prompt": "[Deliverable]\nCreate one polished, flat portrait 2:3 proposal-and-quotation document for the fictional MORNING POST café brand. This is a printable page design, not a photograph, desk scene, mockup or perspective-distorted sheet. Treat the quoted Korean and English copy as authoritative artwork text: do not translate, paraphrase or shorten it.\n[Layout]\nIvory paper, forest-green headings, restrained coral rules, modern editorial sans-serif typography with proper Hangul glyphs. Keep 6% safe margins. Top 14%: bilingual project name, document title, document number and issue date. Next 25%: project overview in two stacked paragraphs, Korean then English. Middle 30%: a four-column quotation table, with row labels at left and amounts right-aligned. Lower 24%: schedule at left and approval checklist at right. Bottom: team name and page number. Use real baseline alignment, clear hierarchy and comfortable leading. Small text must remain readable at native resolution.\n[Exact headings and metadata]\n모닝포스트 브랜드 론칭\nMORNING POST BRAND LAUNCH\n제작 제안 및 견적서\nCREATIVE PROPOSAL & QUOTATION\n문서번호 MP-2026-014\n발행일 2026.10.09\n프로젝트 개요 / Project Overview\n[Exact Korean paragraph]\n동네 카페의 첫인상을 메뉴판과 패키지, 캐릭터 콘텐츠로 연결합니다. 한글과 영어를 함께 사용하되, 메뉴 이름과 가격을 가장 먼저 읽을 수 있도록 정보의 위계를 정리합니다. 모든 이미지와 문구는 실제 매장 안내와 온라인 홍보에 맞춰 제작합니다.\n[Exact English paragraph]\nWe connect the first impression of a neighborhood café through menus, packaging and character-led content. Korean and English appear together, with clear names, prices and reading order. Every visual is planned for both in-store communication and digital promotion.\n[Table; vertical bars define columns and are not literal artwork characters]\n제작 범위 및 비용 / Deliverables & Fees\n항목 | 수량 | 단가 | 금액\n한·영 메뉴판 | 2 | 180,000원 | 360,000원\n제품 이미지 | 3 | 95,000원 | 285,000원\n6컷 코믹 | 1 | 420,000원 | 420,000원\n동화 표지 | 1 | 310,000원 | 310,000원\n소계 1,375,000원\n부가세 137,500원\n합계 1,512,500원\n[Exact schedule and checklist]\n진행 일정 / Production Schedule\n10.12 기획 및 원문 확정\n10.15 1차 디자인 전달\n10.20 수정안 확인\n10.23 최종 파일 전달\n검수 기준 / Approval Checklist\n이름·가격·알레르기 문구 확인\nCheck names, prices and allergen copy.\n납품: PNG 원본 + 편집 가능한 조판 파일\nDelivery: PNG originals + editable layout files.\n담당: 모닝포스트 디자인팀\nPrepared by Morning Post Design Team\n1 / 1\n[Constraints]\nExactly one page, one table with four deliverable rows, and all supplied text. Do not change dates, currencies, commas, quantities or arithmetic. Do not invent bank accounts, signatures, contact details, legal clauses, extra rows or decorative text. The amounts are given data to typeset, not values to improvise.",
+  "prompt_sha256": "c6193f36dc4f9f06a3947c5904e1d18e58e8ec75a0f7506b679970f98ba21616",
+  "timestamp_utc": "2026-10-09T06:03:39.873704+00:00",
+  "status": "success",
+  "reference": null,
+  "instruction_language": "en",
+  "elapsed_seconds": 48.893,
+  "response_model": null,
+  "usage": {
+    "input_tokens": 747,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 747
+    },
+    "output_tokens": 15645,
+    "output_tokens_details": {
+      "image_tokens": 15645,
+      "text_tokens": 0
+    },
+    "total_tokens": 16392
+  },
+  "path": "commercial/images/06_document_flare.png",
+  "width": 2336,
+  "height": 3504,
+  "bytes": 5270936,
+  "sha256": "18aee486b0a04b703778f49203c0f250e239f537d3a0b478b832614fb504c30e",
+  "expected_dimensions": [
+    2336,
+    3504
+  ],
+  "resolution_verified": true,
+  "evidence_path": "commercial/evidence/06_document_flare.json"
+}
