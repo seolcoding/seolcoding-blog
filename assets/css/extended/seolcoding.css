@@ -1,0 +1,71 @@
+/* PaperMod 색 변수를 설코딩 디자인 시스템 변수에 잇는다.
+   --c-* 값은 static/seolcoding/theme-web.css가 밝은/어두운 판에 맞춰 정한다. */
+:root,
+:root[data-theme="dark"] {
+  --theme: var(--c-bg);
+  --entry: var(--c-bg);
+  --primary: var(--c-ink);
+  --secondary: var(--c-muted);
+  --tertiary: var(--c-line);
+  --content: var(--c-body);
+  --code-bg: var(--c-surface);
+  --border: var(--c-line);
+  --radius: 0;
+}
+
+body {
+  font-family: "Pretendard", system-ui, -apple-system, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.post-content {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* 구분은 선과 여백으로만: 카드 상자·그림자를 걷어낸다 */
+.post-entry,
+.first-entry {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+  border-radius: 0;
+}
+.post-entry:active { transform: none; }
+
+/* 형광펜: ==글자== (Hugo extras.mark) → <mark>. 기울임(<em>)은 칠하지 않는다 */
+mark,
+.sc-mark {
+  --m: var(--c-mark);
+  color: inherit;
+  background-color: transparent;
+  background-image: linear-gradient(var(--m), var(--m));
+  background-repeat: no-repeat;
+  background-position: 0 var(--mark-y, 90%);
+  background-size: 100% var(--mark-h, 0.45em);
+  padding: 0 0.08em;
+  margin: 0 -0.08em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+::selection { background: var(--c-sel-bg); color: var(--c-sel-fg); }
+
+a { text-underline-offset: 0.2em; }
+.post-content a { box-shadow: 0 1px 0 var(--c-mark); }
+
+/* 콜아웃: 왼쪽 굵은 선 하나와 여백 */
+.sc-callout {
+  margin: 1.5em 0;
+  padding: 0.25em 0 0.25em 1em;
+  border-left: 3px solid var(--c-mark);
+}
+.sc-callout[data-kind="warning"],
+.sc-callout[data-kind="caution"] { border-left-color: var(--color-coral, var(--c-mark)); }
+.sc-callout[data-kind="note"] { border-left-color: var(--color-sky, var(--c-mark)); }
+.sc-callout-title { font-weight: 700; color: var(--primary); margin-bottom: 0.25em; }
+
+/* 목록 글 묶음도 머리말과 같은 왼쪽 선에 맞춘다 */
+.post-entry { padding-left: 0; padding-right: 0; }

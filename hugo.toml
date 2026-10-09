@@ -1,0 +1,73 @@
+baseURL = "https://blog.seolcoding.com/"
+languageCode = "ko-kr"
+defaultContentLanguage = "ko"
+title = "설코딩 블로그"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = false
+[markup.goldmark.extensions.extras.mark]
+  enable = true
+[markup.highlight]
+  noClasses = false
+
+[params]
+  env = "production"
+  description = "현실의 문제를 AI로 해결하는 인디개발자 설코딩의 블로그"
+  author = "설동헌"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowToc = true
+  TocOpen = false
+  ShowRssButtonInSectionTermList = true
+  mainSections = ["posts"]
+  images = ["seolcoding/logos/L2-profile.png"]
+
+  [params.homeInfoParams]
+    Title = "설코딩 블로그"
+    Content = "AI 교육과 개발을 하며 배운 것을 기록합니다."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/seolcoding"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+  [params.assets]
+    favicon = "favicon.svg"
+    disableHLJS = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    threshold = 0.3
+    keys = ["title", "summary", "content"]
+
+[[menu.main]]
+  name = "글"
+  url = "/posts/"
+  weight = 1
+[[menu.main]]
+  name = "태그"
+  url = "/tags/"
+  weight = 2
+[[menu.main]]
+  name = "검색"
+  url = "/search/"
+  weight = 3
+[[menu.main]]
+  name = "홈페이지"
+  url = "https://www.seolcoding.com/"
+  weight = 4

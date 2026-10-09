@@ -1,0 +1,10 @@
+{{- /* > [!tip] 같은 콜아웃(Obsidian·GitHub 문법)을 선과 여백만으로 그린다 */ -}}
+{{- if eq .Type "alert" }}
+{{- $labels := dict "note" "참고" "tip" "팁" "important" "중요" "warning" "주의" "caution" "조심" }}
+<aside class="sc-callout" data-kind="{{ .AlertType }}">
+  <p class="sc-callout-title">{{ with .AlertTitle }}{{ . }}{{ else }}{{ index $labels .AlertType | default (.AlertType | title) }}{{ end }}</p>
+  {{ .Text }}
+</aside>
+{{- else }}
+<blockquote>{{ .Text }}</blockquote>
+{{- end }}
