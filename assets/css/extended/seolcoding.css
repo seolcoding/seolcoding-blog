@@ -69,3 +69,39 @@ a { text-underline-offset: 0.2em; }
 
 /* 목록 글 묶음도 머리말과 같은 왼쪽 선에 맞춘다 */
 .post-entry { padding-left: 0; padding-right: 0; }
+
+/* 머리말: 홈페이지(www.seolcoding.com)와 같은 높이·로고·메뉴(2026-10-09 결정 E). 마크업은 layouts/_partials/header.html */
+.sc-header { border-bottom: 1px solid var(--c-line); }
+.sc-top {
+  display: flex; align-items: center; gap: 32px; height: 76px;
+  max-width: 1200px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px);
+}
+.sc-brand { display: flex; align-items: center; gap: 12px; flex: none; text-decoration: none; line-height: 0; }
+.sc-brand img { width: 214px; height: auto; }
+.sc-brand-sub { font-size: 15px; font-weight: 600; color: var(--c-muted); line-height: 1; }
+/* 로고 판 고르기(components.css와 같은 규칙. 블로그는 em을 칠하는 components.css를 불러오지 않아 여기 둔다) */
+.sc-logo-light { display: var(--c-logo-light, block); }
+.sc-logo-dark { display: var(--c-logo-dark, none); }
+.sc-nav { flex: 1; min-width: 0; }
+.sc-menu { display: flex; gap: 4px 24px; list-style: none; margin: 0; padding: 0; }
+.sc-menu a { display: inline-block; padding: 6px 0; font-size: 16px; font-weight: 600; color: var(--c-ink); text-decoration: none; white-space: nowrap; }
+.sc-menu a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+.sc-menu a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; }
+.sc-theme {
+  display: inline-grid; place-items: center; flex: none; margin: 0 0 0 auto;
+  width: 40px; height: 40px; border-radius: 999px; border: 1px solid var(--c-line);
+  background: transparent; color: var(--c-ink); cursor: pointer;
+}
+.sc-theme:hover { background: var(--c-surface); border-color: var(--c-rule); }
+.sc-theme svg { width: 18px; height: 18px; }
+:focus-visible { outline: 2px solid var(--c-ink); outline-offset: 3px; }
+@media (max-width: 760px) {
+  .sc-top { flex-wrap: wrap; height: auto; gap: 0 16px; padding-top: 14px; padding-bottom: 6px; }
+  .sc-brand img { width: 168px; }
+  .sc-nav { order: 3; flex-basis: 100%; overflow-x: auto; scrollbar-width: none; margin-top: 8px; }
+  .sc-menu { flex-wrap: nowrap; gap: 0 18px; }
+  .sc-menu a { font-size: 15px; padding: 8px 0; }
+}
+
+/* 목록 페이지도 홈페이지처럼 흰(어두운 판은 검은) 바탕. PaperMod 기본은 목록만 회색(--code-bg)이다 */
+body.list { background: var(--c-bg); }

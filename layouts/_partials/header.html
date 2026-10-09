@@ -1,0 +1,28 @@
+{{- /* 머리말을 홈페이지(www.seolcoding.com)와 같게: 76px 높이, 214px 가로 로고, 글자 메뉴, 화면 모드 버튼(2026-10-09 결정 E).
+       PaperMod의 header.html을 덮어쓴다. 화면 모드 버튼은 PaperMod 스크립트가 쓰는 id(theme-toggle)와 moon/sun 그림을 그대로 둔다. */ -}}
+{{- $page := . }}
+<header class="header sc-header">
+  <div class="sc-top">
+    <a class="sc-brand" href="{{ "" | absLangURL }}" accesskey="h" title="{{ site.Title }} (Alt + H)">
+      <img class="sc-logo-light" src="{{ "seolcoding/logos/L2-horizontal.svg" | relURL }}" alt="SEOLCODING" width="638" height="77">
+      <img class="sc-logo-dark" src="{{ "seolcoding/logos/L2-horizontal-dark.svg" | relURL }}" alt="SEOLCODING" width="638" height="91">
+      <span class="sc-brand-sub">블로그</span>
+    </a>
+    <nav class="sc-nav" aria-label="주 메뉴">
+      <ul id="menu" class="sc-menu">
+        {{- range site.Menus.main }}
+          {{- $url := .URL }}
+          {{- $current := and (hasPrefix $url "/") (hasPrefix $page.RelPermalink $url) }}
+          {{- $isSearch := eq $url "/search/" }}
+          <li><a href="{{ $url | absLangURL }}"{{ if $current }} aria-current="page"{{ end }}{{ if $isSearch }} accesskey="/" title="{{ .Name }} (Alt + /)"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+    {{- if not site.Params.disableThemeToggle }}
+    <button id="theme-toggle" class="theme-toggle sc-theme" type="button" accesskey="t" title="화면 모드 바꾸기 (Alt + T)" aria-label="밝은 화면과 어두운 화면 바꾸기">
+      <svg class="moon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M16.5 12.3A7 7 0 0 1 7.7 3.5a7 7 0 1 0 8.8 8.8Z"/></svg>
+      <svg class="sun" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="3.4"/><path d="M10 1.8v2M10 16.2v2M1.8 10h2M16.2 10h2M4.2 4.2l1.4 1.4M14.4 14.4l1.4 1.4M4.2 15.8l1.4-1.4M14.4 5.6l1.4-1.4"/></svg>
+    </button>
+    {{- end }}
+  </div>
+</header>
