@@ -1045,8 +1045,8 @@
     },
     {
       "path": "share/blog.md",
-      "bytes": 9851,
-      "sha256": "b6d0759fffbba793489d005f3e5e47369a9591593f90f726979d3d756aaa74a1"
+      "bytes": 10014,
+      "sha256": "fc4ba9ff58ba03fc413da52c6900356832bceae26855ac116a453333860aed7c"
     },
     {
       "path": "share/index.html",
@@ -1085,7 +1085,7 @@
     }
   ],
   "native_reference_image_count": 6,
-  "total_bytes": 290560990,
+  "total_bytes": 290561153,
   "original_storage": "R2 seolcoding-files; same-origin Pages redirects",
   "originals": [
     {

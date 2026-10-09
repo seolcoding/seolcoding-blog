@@ -10,7 +10,7 @@ draft: false
 
 메뉴판·견적서·패키지·캐릭터·만화·동화와 기초 이미지까지, 2026년 10월 9일에 생성한 10개 과제·원본 30장입니다. 현재 어떤 모델을 어떤 작업에 쓸지 고르는 데 초점을 맞췄습니다. 메뉴판·견적서·코믹에는 Orca로 실행한 Codex·AGY 내장 결과 6장도 참고로 추가했습니다. 내장 도구는 해상도·품질 조건이 달라 통제된 구버전 성능 실험으로 해석하지 않습니다.
 
-[이미지와 공통 프롬프트 직접 비교](../../)
+[이미지와 공통 프롬프트 직접 비교](https://blog.seolcoding.com/image-bench/)
 
 ## 비교한 모델과 조건
 
@@ -48,7 +48,7 @@ STRICT-Bench는 원문과 OCR 추출을 대조하는 방식, TextAtlas는 밀도
 
 이 과제에서는 Flare를 매장 시안의 출발점으로, Nano를 가격 우선 초안으로 골랐습니다. 어떤 모델이든 작은 글씨는 실제 출력 크기에서 다시 검수해야 합니다.
 
-![Flare 메뉴판 최초 응답의 축소본과 해당 과제의 세 모델 생성비. 전체 원본 3장은 대시보드에서 확인할 수 있습니다.](../02_menu.png)
+![Flare 메뉴판 최초 응답의 축소본과 해당 과제의 세 모델 생성비. 전체 원본 3장은 대시보드에서 확인할 수 있습니다.](https://blog.seolcoding.com/image-bench/share/02_menu.png)
 
 ## 만화에서는 글자보다 화자와 소품이 문제였다
 
@@ -56,7 +56,7 @@ Nano Banana 2.1의 코믹에서는 2컷의 책이 손에 닿지 않고 떠 있�
 
 코믹과 동화에는 Sunburst의 첫 캐릭터 시트를 세 모델 모두에 동일하게 참조로 보냈습니다. 참조 출처가 결과에 영향을 줄 수 있으므로, 이 결과만으로 독립 생성의 캐릭터 유지 능력을 순위로 정하지 않았습니다.
 
-![Nano Banana 2.1 코믹 최초 응답의 발췌 소개. 화자와 소품에 관한 관찰은 해당 이미지의 사례입니다.](../03_comic.png)
+![Nano Banana 2.1 코믹 최초 응답의 발췌 소개. 화자와 소품에 관한 관찰은 해당 이미지의 사례입니다.](https://blog.seolcoding.com/image-bench/share/03_comic.png)
 
 ## 이미지당 얼마가 들었나
 
@@ -68,7 +68,7 @@ Nano Banana 2.1의 코믹에서는 2컷의 책이 손에 닿지 않고 떠 있�
 
 가격 근거: [Sunburst 공식 모델·가격](https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst) · [Flare 공식 모델·가격](https://developers.openai.com/api/docs/models/gpt-image-2.5-flare) · [OpenAI 모델 선택 안내](https://developers.openai.com/api/docs/guides/image-generation) · [Google 공식 가격](https://ai.google.dev/gemini-api/docs/pricing) · [Nano Banana 2.1 공식 모델](https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1)
 
-![10과제 장당 평균과 벤치 30장의 산정 생성비. 원본 해상도와 품질 설정은 모델마다 다릅니다.](../04_cost.png)
+![10과제 장당 평균과 벤치 30장의 산정 생성비. 원본 해상도와 품질 설정은 모델마다 다릅니다.](https://blog.seolcoding.com/image-bench/share/04_cost.png)
 
 ## 이전 모델과 내장 도구도 참고로 비교했습니다
 
